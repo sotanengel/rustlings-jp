@@ -1,5 +1,5 @@
-// TODO: Add some function with the name `call_me` without arguments or a return value.
+// TODO: `call_me` 関数を追加してください(引数や返り値は設定しないでください。)。
 
 fn main() {
-    call_me(); // Don't change this line
+    call_me(); // この行は変更しないでください。
 }

@@ -5,6 +5,6 @@ fn call_me(num: u8) {
 }
 
 fn main() {
-    // TODO: Fix the function call.
+    // TODO: `call_me`関数の呼び出し方を修正してください。
     call_me();
 }

@@ -1,4 +1,4 @@
-// TODO: Fix the function body without changing the signature.
+// TODO: 関数の中身を変更してコンパイルエラーを修正してください(関数の入出力を変更するのは禁止です)。
 fn square(num: i32) -> i32 {
     num * num;
 }

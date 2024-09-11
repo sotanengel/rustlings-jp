@@ -1,13 +1,11 @@
-// This store is having a sale where if the price is an even number, you get 10
-// Rustbucks off, but if it's an odd number, it's 3 Rustbucks off.
-// Don't worry about the function bodies themselves, we are only interested in
-// the signatures for now.
+// このお店では価格が偶数の時に10の割引を受けることができますが、奇数の時には3の割引を受けることができます。
+// 関数の中身については今回は気にしなくとも大丈夫です。
 
 fn is_even(num: i64) -> bool {
     num % 2 == 0
 }
 
-// TODO: Fix the function signature.
+// TODO: 関数の入出力の記載内容を修正してください。
 fn sale_price(price: i64) -> {
     if is_even(price) {
         price - 10

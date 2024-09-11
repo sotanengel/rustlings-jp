@@ -1,4 +1,8 @@
+// `call_me` 関数を追加してください(引数や返り値は設定しないでください。)。
+fn call_me() {
+    println!("Hello world!");
+}
+
 fn main() {
-    // DON'T EDIT THIS SOLUTION FILE!
-    // It will be automatically filled after you finish the exercise.
+    call_me();
 }
