@@ -1,16 +1,16 @@
 fn bigger(a: i32, b: i32) -> i32 {
-    // TODO: Complete this function to return the bigger number!
-    // If both numbers are equal, any of them can be returned.
-    // Do not use:
-    // - another function call
-    // - additional variables
+    // TODO: この関数は引数として受け取ったaとbのうち、大きい方をリターンします。
+    // もしも同じ数字であればどちらかの引数を返却します。
+    // 以下を使ってはいけません：
+    // - 他の関数を呼び出す
+    // - 他の変数を追加する
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行でbigger関数のテストができます。
 }
 
-// Don't mind this for now :)
+// 以下は気にしなくとも結構です。
 #[cfg(test)]
 mod tests {
     use super::*;

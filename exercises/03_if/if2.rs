@@ -1,4 +1,4 @@
-// TODO: Fix the compiler error on this function.
+// TODO: この関数上でのコンパイルエラーを修正してください。
 fn foo_if_fizz(fizzish: &str) -> &str {
     if fizzish == "fizz" {
         "foo"
@@ -8,11 +8,11 @@ fn foo_if_fizz(fizzish: &str) -> &str {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行でfoo_if_fizz関数のテストができます。
 }
 
-// TODO: Read the tests to understand the desired behavior.
-// Make all tests pass without changing them.
+// TODO: 以下のテストを読んで挙動を理解してください。
+// テストが全て通るようにfoo_if_fizzを実装してください。
 #[cfg(test)]
 mod tests {
     use super::*;
