@@ -1,9 +1,9 @@
-# Variables
+# 変数
 
-In Rust, variables are immutable by default.
-When a variable is immutable, once a value is bound to a name, you can’t change that value.
-You can make them mutable by adding `mut` in front of the variable name.
+Rustでは変数は標準で不変です。
+変数が不変のとき代入した値が名前(変数)に紐づけられると、その値を変更することはできません。
+変数名の前に`mut`を加筆することで変数を可変にすることができます。
 
-## Further information
+## 補足情報
 
-- [Variables and Mutability](https://doc.rust-lang.org/book/ch03-01-variables-and-mutability.html)
+- [Variables and Mutability](https://doc.rust-jp.rs/book-ja/ch03-01-variables-and-mutability.html)
