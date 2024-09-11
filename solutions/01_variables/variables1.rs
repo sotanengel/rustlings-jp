@@ -2,7 +2,5 @@ fn main() {
   // 変数の宣言には`let`が必要です。
   let x = 5;
 
-  // 変数の値を出力する際にはプレースホルダー({})で指定し、
-  // カンマで区切った場所に変数を格納しましょう。
-  println!("x has the value {}", x);
+  println!("x has the value {x}");
 }
