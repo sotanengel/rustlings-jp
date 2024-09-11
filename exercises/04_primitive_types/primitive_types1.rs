@@ -6,8 +6,8 @@ fn main() {
         println!("Good morning!");
     }
 
-    // TODO: Define a boolean variable with the name `is_evening` before the `if` statement below.
-    // The value of the variable should be the negation (opposite) of `is_morning`.
+    // TODO: `is_evening`変数を`if`よりも前に実装してください。
+    // `is_evening`変数は`is_morning`変数と真逆のBooleans型にしてください。
     // let …
     if is_evening {
         println!("Good evening!");

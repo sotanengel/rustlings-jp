@@ -1,4 +1,8 @@
 fn main() {
-    // DON'T EDIT THIS SOLUTION FILE!
-    // It will be automatically filled after you finish the exercise.
+  let cat = ("Furry McFurson", 3.5);
+
+  // タプルを分解しました。
+  let (name, age) = cat;
+
+  println!("{name} is {age} years old");
 }

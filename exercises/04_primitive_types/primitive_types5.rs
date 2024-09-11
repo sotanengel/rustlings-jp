@@ -1,7 +1,7 @@
 fn main() {
     let cat = ("Furry McFurson", 3.5);
 
-    // TODO: Destructure the `cat` tuple in one statement so that the println works.
+    // TODO: `cat`タプルを以下のprintln!が適切に動くように分解してください。
     // let /* your pattern here */ = cat;
 
     println!("{name} is {age} years old");

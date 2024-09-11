@@ -1,5 +1,5 @@
 fn main() {
-    // TODO: Create an array called `a` with at least 100 elements in it.
+    // TODO: `a`という要素数が100以上の配列を作成してください。
     // let a = ???
 
     if a.len() >= 100 {

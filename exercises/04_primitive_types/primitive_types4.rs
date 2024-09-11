@@ -1,5 +1,5 @@
 fn main() {
-    // You can optionally experiment here.
+    // この行でslice_out_of_array関数のテストができます。
 }
 
 #[cfg(test)]
@@ -8,7 +8,7 @@ mod tests {
     fn slice_out_of_array() {
         let a = [1, 2, 3, 4, 5];
 
-        // TODO: Get a slice called `nice_slice` out of the array `a` so that the test passes.
+        // TODO: 以下のテストが通るような`nice_slice`というスライスを配列aから作成してください。
         // let nice_slice = ???
 
         assert_eq!([2, 3, 4], nice_slice);
