@@ -1,4 +1,6 @@
+// 定数型は常に型を表記する必要があります。
+const NUMBER: u64 = 3;
+
 fn main() {
-    // DON'T EDIT THIS SOLUTION FILE!
-    // It will be automatically filled after you finish the exercise.
+    println!("Number: {NUMBER}");
 }

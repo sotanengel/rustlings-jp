@@ -1,4 +1,4 @@
-// TODO: Change the line below to fix the compiler error.
+// TODO: 以下の行を変更し、コンパイルエラーを解消しましょう。
 const NUMBER = 3;
 
 fn main() {
