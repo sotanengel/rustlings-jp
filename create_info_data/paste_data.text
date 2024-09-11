@@ -1,25 +1,9 @@
-# The format version is an indicator of the compatibility of third-party exercises with the
-# Rustlings program.
-# The format version is not the same as the version of the Rustlings program.
-# In case Rustlings makes an unavoidable breaking change to the expected format of third-party
-# exercises, you would need to raise this version and adapt to the new format.
-# Otherwise, the newest version of the Rustlings program won't be able to run these exercises.
-format_version = 1
-
-# Optional multi-line message to be shown to users when just starting with the exercises.
-welcome_message = """Welcome to these third-party Rustlings exercises."""
-
-# Optional multi-line message to be shown to users after finishing all exercises.
-final_message = """We hope that you found the exercises helpful :D"""
-
-# Repeat this section for every exercise.
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "intro1"
 dir = "00_intro"
 test = false
 hint = """???"""
-skip_check_unsolved = true
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -109,24 +93,28 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "if1"
 dir = "03_if"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "if2"
 dir = "03_if"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "if3"
 dir = "03_if"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "quiz1"
 dir = "quizzes"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -154,6 +142,7 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types4"
 dir = "04_primitive_types"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -167,42 +156,49 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types6"
 dir = "04_primitive_types"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "vecs1"
 dir = "05_vecs"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "vecs2"
 dir = "05_vecs"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics1"
 dir = "06_move_semantics"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics2"
 dir = "06_move_semantics"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics3"
 dir = "06_move_semantics"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics4"
 dir = "06_move_semantics"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -216,18 +212,21 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "structs1"
 dir = "07_structs"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "structs2"
 dir = "07_structs"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "structs3"
 dir = "07_structs"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -248,6 +247,7 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "enums3"
 dir = "08_enums"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -268,6 +268,7 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "strings3"
 dir = "09_strings"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -302,36 +303,42 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "hashmaps1"
 dir = "11_hashmaps"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "hashmaps2"
 dir = "11_hashmaps"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "hashmaps3"
 dir = "11_hashmaps"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "quiz2"
 dir = "quizzes"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "options1"
 dir = "12_options"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "options2"
 dir = "12_options"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -345,12 +352,14 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors1"
 dir = "13_error_handling"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors2"
 dir = "13_error_handling"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -364,6 +373,7 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors4"
 dir = "13_error_handling"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -377,6 +387,7 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors6"
 dir = "13_error_handling"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -390,48 +401,56 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "generics2"
 dir = "14_generics"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits1"
 dir = "15_traits"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits2"
 dir = "15_traits"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits3"
 dir = "15_traits"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits4"
 dir = "15_traits"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits5"
 dir = "15_traits"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "quiz3"
 dir = "quizzes"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "lifetimes1"
 dir = "16_lifetimes"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -452,60 +471,70 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "tests1"
 dir = "17_tests"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "tests2"
 dir = "17_tests"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "tests3"
 dir = "17_tests"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators1"
 dir = "18_iterators"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators2"
 dir = "18_iterators"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators3"
 dir = "18_iterators"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators4"
 dir = "18_iterators"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators5"
 dir = "18_iterators"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "box1"
 dir = "19_smart_pointers"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "rc1"
 dir = "19_smart_pointers"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -519,6 +548,7 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "cow1"
 dir = "19_smart_pointers"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -539,6 +569,7 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "threads3"
 dir = "20_threads"
+test = false
 hint = """???"""
 
 [[exercises]]
@@ -582,7 +613,6 @@ name = "clippy2"
 dir = "22_clippy"
 test = false
 hint = """???"""
-skip_check_unsolved = true
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -595,28 +625,34 @@ hint = """???"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "using_as"
 dir = "23_conversions"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "from_into"
 dir = "23_conversions"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "from_str"
 dir = "23_conversions"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "try_from_into"
 dir = "23_conversions"
+test = false
 hint = """???"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "as_ref_mut"
 dir = "23_conversions"
+test = false
 hint = """???"""
+

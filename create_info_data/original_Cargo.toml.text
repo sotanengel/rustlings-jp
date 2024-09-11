@@ -1,4 +1,3 @@
-# Don't edit the `bin` list manually! It is updated by `rustlings dev update`
 bin = [
   { name = "intro1", path = "exercises/00_intro/intro1.rs" },
   { name = "intro1_sol", path = "solutions/00_intro/intro1.rs" },
@@ -189,11 +188,3 @@ bin = [
   { name = "as_ref_mut", path = "exercises/23_conversions/as_ref_mut.rs" },
   { name = "as_ref_mut_sol", path = "solutions/23_conversions/as_ref_mut.rs" },
 ]
-
-[package]
-name = "exercises"
-edition = "2021"
-# Don't publish the exercises on crates.io!
-publish = false
-
-[dependencies]
