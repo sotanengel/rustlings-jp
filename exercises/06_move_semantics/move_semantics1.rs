@@ -1,4 +1,4 @@
-// TODO: Fix the compiler error in this function.
+// TODO: この関数のコンパイルエラーを修正してください。
 fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
     let vec = vec;
 
@@ -8,7 +8,7 @@ fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

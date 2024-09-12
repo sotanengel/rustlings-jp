@@ -1,14 +1,12 @@
 #![allow(clippy::ptr_arg)]
 
-// TODO: Fix the compiler errors without changing anything except adding or
-// removing references (the character `&`).
-
-// Shouldn't take ownership
+// TODO: 参照(&)をつけたり、削除したりすることでコンパイルエラーを修正してください。
+// 所有権を取得しないでください。
 fn get_char(data: String) -> char {
     data.chars().last().unwrap()
 }
 
-// Should take ownership
+// 所有権を取得してください。
 fn string_uppercase(mut data: &String) {
     data = data.to_uppercase();
 

@@ -1,11 +1,11 @@
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。 
 }
 
 #[cfg(test)]
 mod tests {
-    // TODO: Fix the compiler errors only by reordering the lines in the test.
-    // Don't add, change or remove any line.
+    // TODO: テスト内の行を入れ替えることでコンパイルエラーを修正してください。
+    // その他の行を追加したり削除したりしないでください。
     #[test]
     fn move_semantics4() {
         let mut x = Vec::new();
