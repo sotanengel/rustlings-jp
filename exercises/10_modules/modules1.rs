@@ -1,6 +1,6 @@
-// TODO: Fix the compiler error about calling a private function.
+// TODO: プライベートな関数を呼び出しているコンパイルエラーを修正してください。
 mod sausage_factory {
-    // Don't let anybody outside of this module see this!
+    // このメソッドはモジュール外部から呼び出せないように注意してください。
     fn get_secret_recipe() -> String {
         String::from("Ginger")
     }

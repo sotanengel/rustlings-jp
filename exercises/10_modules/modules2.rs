@@ -1,9 +1,8 @@
-// You can bring module paths into scopes and provide new names for them with
-// the `use` and `as` keywords.
+// `use`や`as`キーワードを使うことで`モジュールのパスや新しい名前を導入できます。
 
 #[allow(dead_code)]
 mod delicious_snacks {
-    // TODO: Add the following two `use` statements after fixing them.
+    // 以下の`use`構文を修正後に追加してください。
     // use self::fruits::PEAR as ???;
     // use self::veggies::CUCUMBER as ???;
 
