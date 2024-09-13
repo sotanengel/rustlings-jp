@@ -1,15 +1,15 @@
 struct ColorRegularStruct {
-    // TODO: Add the fields that the test `regular_structs` expects.
-    // What types should the fields have? What are the minimum and maximum values for RGB colors?
+    // TODO: `regular_structs`テストが想定するように構造体のフィールドを定義してください。
+    // 構造体に適切な型はなんでしょうか？
 }
 
-struct ColorTupleStruct(/* TODO: Add the fields that the test `tuple_structs` expects */);
+struct ColorTupleStruct(/* TODO:`tuple_structs`テストが想定するように構造体のフィールドを定義してください。 */);
 
 #[derive(Debug)]
 struct UnitStruct;
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
@@ -18,7 +18,7 @@ mod tests {
 
     #[test]
     fn regular_structs() {
-        // TODO: Instantiate a regular struct.
+        // TODO: 基本的な構造体のインスタンスを作成してください。
         // let green =
 
         assert_eq!(green.red, 0);
@@ -28,7 +28,7 @@ mod tests {
 
     #[test]
     fn tuple_structs() {
-        // TODO: Instantiate a tuple struct.
+        // TODO: タプル構造体のインスタンスを作成してください。
         // let green =
 
         assert_eq!(green.0, 0);
@@ -38,7 +38,7 @@ mod tests {
 
     #[test]
     fn unit_structs() {
-        // TODO: Instantiate a unit struct.
+        // TODO: ユニット構造体のインスタンスを作成してください。
         // let unit_struct =
         let message = format!("{unit_struct:?}s are fun!");
 

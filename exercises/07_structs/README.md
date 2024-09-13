@@ -1,8 +1,8 @@
-# Structs
+# 構造体
 
-Rust has three struct types: a classic C struct, a tuple struct, and a unit struct.
+Rustは3つの構造体の種類を持っています(C言語の構造体、タプル構造体、ユニット構造体)。
 
-## Further information
+## 補足情報
 
-- [Structures](https://doc.rust-lang.org/book/ch05-01-defining-structs.html)
-- [Method Syntax](https://doc.rust-lang.org/book/ch05-03-method-syntax.html)
+- [Structures](https://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html)
+- [Method Syntax](https://doc.rust-jp.rs/book-ja/ch05-03-method-syntax.html)

@@ -22,7 +22,7 @@ fn create_order_template() -> Order {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
@@ -33,7 +33,8 @@ mod tests {
     fn your_order() {
         let order_template = create_order_template();
 
-        // TODO: Create your own order using the update syntax and template above!
+        // TODO: 以下のテストが通るように
+        // 構造体更新記法やorder_template変数を使ってあなたのオーダーを作成してください。
         // let your_order =
 
         assert_eq!(your_order.name, "Hacker in Rust");
