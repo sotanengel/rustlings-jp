@@ -1,12 +1,11 @@
-# Hashmaps
+# ハッシュマップ
 
-A *hash map* allows you to associate a value with a particular key.
-You may also know this by the names [*unordered map* in C++](https://en.cppreference.com/w/cpp/container/unordered_map),
-[*dictionary* in Python](https://docs.python.org/3/tutorial/datastructures.html#dictionaries) or an *associative array* in other languages.
+*ハッシュマップ*はあるキーと値を関連付けることができます。
+これはC++で言うところの[*unordered map*](https://en.cppreference.com/w/cpp/container/unordered_map)やPythonで言うところの[*dictionary*](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)、
+他言語で言うところの*連想配列*と言えます。
 
-This is the other data structure that we've been talking about before, when
-talking about Vecs.
+ハッシュマップは配列とは違うデータ構造を持ちます。
 
-## Further information
+## 補足情報
 
 - [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)

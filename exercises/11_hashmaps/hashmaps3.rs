@@ -1,14 +1,10 @@
-// A list of scores (one per line) of a soccer match is given. Each line is of
-// the form "<team_1_name>,<team_2_name>,<team_1_goals>,<team_2_goals>"
-// Example: "England,France,4,2" (England scored 4 goals, France 2).
-//
-// You have to build a scores table containing the name of the team, the total
-// number of goals the team scored, and the total number of goals the team
-// conceded.
+// サッカーの試合のスコアをリスト型で取り扱います。
+// それぞれの行では"<team_1_name>,<team_2_name>,<team_1_goals>,<team_2_goals>"という形式を取ります。
+// チームの名前と取得点、失点の合計点を格納するスコアテーブルを作る必要があります。
 
 use std::collections::HashMap;
 
-// A structure to store the goal details of a team.
+// チームの点数の詳細を格納する構造体。
 #[derive(Default)]
 struct TeamScores {
     goals_scored: u8,
@@ -16,28 +12,26 @@ struct TeamScores {
 }
 
 fn build_scores_table(results: &str) -> HashMap<&str, TeamScores> {
-    // The name of the team is the key and its associated struct is the value.
+    // チームの名前はキー、構造体はバリューに格納します。
     let mut scores = HashMap::new();
 
     for line in results.lines() {
         let mut split_iterator = line.split(',');
-        // NOTE: We use `unwrap` because we didn't deal with error handling yet.
+        // NOTE: エラーハンドリングについてまだ取り扱っていないので、一旦`unwrap`を使います。
         let team_1_name = split_iterator.next().unwrap();
         let team_2_name = split_iterator.next().unwrap();
         let team_1_score: u8 = split_iterator.next().unwrap().parse().unwrap();
         let team_2_score: u8 = split_iterator.next().unwrap().parse().unwrap();
 
-        // TODO: Populate the scores table with the extracted details.
-        // Keep in mind that goals scored by team 1 will be the number of goals
-        // conceded by team 2. Similarly, goals scored by team 2 will be the
-        // number of goals conceded by team 1.
+        // TODO: スコアテーブルに引数resultsから取得したデータを格納しましょう。
+        // チーム1の取得点はチーム2の失点であることに留意しましょう。
     }
 
     scores
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

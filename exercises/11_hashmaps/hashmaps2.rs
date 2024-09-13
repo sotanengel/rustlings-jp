@@ -1,13 +1,7 @@
-// We're collecting different fruits to bake a delicious fruit cake. For this,
-// we have a basket, which we'll represent in the form of a hash map. The key
-// represents the name of each fruit we collect and the value represents how
-// many of that particular fruit we have collected. Three types of fruits -
-// Apple (4), Mango (2) and Lychee (5) are already in the basket hash map. You
-// must add fruit to the basket so that there is at least one of each kind and
-// more than 11 in total - we have a lot of mouths to feed. You are not allowed
-// to insert any more of the fruits that are already in the basket (Apple,
-// Mango, and Lychee).
-
+// 美味しいフルーツケーキを焼くために異なるフルーツを集めています。この収集のためにハッシュマップ形式かごを用意しました。
+// キーはフルーツの名前、バリューは集めたフルーツの数を示しています。
+// AppleとMango、Lycheeは既にハッシュマップに格納されており、Fruit列挙型で定義した全てのフルーツを格納する必要があります。
+// また既に格納されているAppleとMango、Lycheeの数は変更することができません。
 use std::collections::HashMap;
 
 #[derive(Hash, PartialEq, Eq, Debug)]
@@ -29,21 +23,19 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
     ];
 
     for fruit in fruit_kinds {
-        // TODO: Insert new fruits if they are not already present in the
-        // basket. Note that you are not allowed to put any type of fruit that's
-        // already present!
+        // まだハッシュマップに格納されていないフルーツを追加してください(既にあるフルーツは追加してはいけません！)
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
 
-    // Don't modify this function!
+    // この関数は変更できません。
     fn get_fruit_basket() -> HashMap<Fruit, u32> {
         let content = [(Fruit::Apple, 4), (Fruit::Mango, 2), (Fruit::Lychee, 5)];
         HashMap::from_iter(content)
