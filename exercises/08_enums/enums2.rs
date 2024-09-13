@@ -8,7 +8,7 @@ struct Point {
 
 #[derive(Debug)]
 enum Message {
-    // TODO: Define the different variants used below.
+    // TODO: 以下で使う異なる列挙子を定義してください。
 }
 
 impl Message {

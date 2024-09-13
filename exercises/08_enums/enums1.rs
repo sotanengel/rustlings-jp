@@ -1,6 +1,6 @@
 #[derive(Debug)]
 enum Message {
-    // TODO: Define a few types of messages as used below.
+    // TODO: 以下のコードで使うMessage列挙型の型を定義してください。
 }
 
 fn main() {

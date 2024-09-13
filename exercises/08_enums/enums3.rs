@@ -4,7 +4,7 @@ struct Point {
 }
 
 enum Message {
-    // TODO: Implement the message variant types based on their usage below.
+    // TODO: 以下で使う列挙子を記載してください。
 }
 
 struct State {
@@ -12,7 +12,7 @@ struct State {
     height: u64,
     position: Point,
     message: String,
-    // RGB color composed of red, green and blue.
+    // RGBはredとgreen、blueの数値で構成されています。
     color: (u8, u8, u8),
     quit: bool,
 }
@@ -40,13 +40,12 @@ impl State {
     }
 
     fn process(&mut self, message: Message) {
-        // TODO: Create a match expression to process the different message
-        // variants using the methods defined above.
+        // TODO: 上記で定義したメソッドを使って異なるMessage列挙型に対するmatch処理を実装してください。
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
