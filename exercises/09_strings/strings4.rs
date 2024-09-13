@@ -1,4 +1,4 @@
-// Calls of this function should be replaced with calls of `string_slice` or `string`.
+// この関数を呼び出す代わりに、`string_slice`か`string`をmain関数内で呼び出してください。
 fn placeholder() {}
 
 fn string_slice(arg: &str) {
@@ -9,9 +9,8 @@ fn string(arg: String) {
     println!("{arg}");
 }
 
-// TODO: Here are a bunch of values - some are `String`, some are `&str`.
-// Your task is to replace `placeholder(…)` with either `string_slice(…)`
-// or `string(…)` depending on what you think each value is.
+// TODO: 以下に記載された文字列は`String`か`&str`が該当します。
+// `placeholder(…)`を`string_slice(…)`か`string(…)`に置き換えてください。
 fn main() {
     placeholder("blue");
 
@@ -25,8 +24,8 @@ fn main() {
 
     placeholder(format!("Interpolation {}", "Station"));
 
-    // WARNING: This is byte indexing, not character indexing.
-    // Character indexing can be done using `s.chars().nth(INDEX)`.
+  // WARNING: 文字ごとのインデックスではなくバイトごとのインデックスです。
+  // 文字のインデックスを利用するためには`s.chars().nth(INDEX)`と記載します。
     placeholder(&String::from("abc")[0..1]);
 
     placeholder("  hello there ".trim());

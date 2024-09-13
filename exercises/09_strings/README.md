@@ -1,9 +1,8 @@
 # Strings
 
-Rust has two string types, a string slice (`&str`) and an owned string (`String`).
-We're not going to dictate when you should use which one, but we'll show you how
-to identify and create them, as well as use them.
+Rustにはスライスの文字列`&str`(`&str`)と所有権のある文字列(`String`)という2種類の文字列が存在します。
+あなたがどちらの型を使うか指示はしませんが、判別や作成方法、使い方などについてこのエクササイズでは紹介します。
 
 ## Further information
 
-- [Strings](https://doc.rust-lang.org/book/ch08-02-strings.html)
+- [Strings](hhttps://doc.rust-jp.rs/book-ja/ch08-02-strings.html)

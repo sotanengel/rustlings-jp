@@ -1,4 +1,4 @@
-// TODO: Fix the compiler error without changing the function signature.
+// TODO: 関数の中身のみを書き換えることでコンパイルエラーを解消しましょう。
 fn current_favorite_color() -> String {
     "blue"
 }

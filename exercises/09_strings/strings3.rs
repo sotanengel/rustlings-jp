@@ -1,17 +1,18 @@
 fn trim_me(input: &str) -> &str {
-    // TODO: Remove whitespace from both ends of a string.
+    // TODO: 文字列の前後の空白を取り除いてください。
 }
 
 fn compose_me(input: &str) -> String {
-    // TODO: Add " world!" to the string! There are multiple ways to do this.
+    // TODO: 文字列の末尾に" world!"を追加してください。
+    // いくつかの記載方法があります。
 }
 
 fn replace_me(input: &str) -> String {
-    // TODO: Replace "cars" in the string with "balloons".
+    // TODO: "cars"という文字列を"balloons"に置換してください。
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
