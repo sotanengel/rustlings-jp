@@ -1,18 +1,12 @@
-// Say we're writing a game where you can buy items with tokens. All items cost
-// 5 tokens, and whenever you purchase items there is a processing fee of 1
-// token. A player of the game will type in how many items they want to buy, and
-// the `total_cost` function will calculate the total cost of the items. Since
-// the player typed in the quantity, we get it as a string. They might have
-// typed anything, not just numbers!
+// トークンを使ってアイテムを購入するゲームをコーディングします。
+// 全てのアイテムは5トークンで買うことができますが、購入のたびに利用料として1トークンがかかります。
+// ゲームのプレイヤーは購入したいアイテムの個数を入力することができ、`total_cost`関数は必要なトークン数を計算します。
+// プレイヤーが入力する個数をプログラムでは文字列として受け取ります。ただしプレイヤーは数字以外を入力する可能性があります。
+// 現状、この関数は全てのエラーケースについてハンドリングできていません。
+//　このエクササイズでは、`total_cost`関数で受け取った文字列が数字でなければParseIntErrorを返却したい。
+// エラーの場合にはコストの計算を行う前にすぐにエラーを返したい。
 //
-// Right now, this function isn't handling the error case at all. What we want
-// to do is: If we call the `total_cost` function on a string that is not a
-// number, that function will return a `ParseIntError`. In that case, we want to
-// immediately return that error from our function and not try to multiply and
-// add.
-//
-// There are at least two ways to implement this that are both correct. But one
-// is a lot shorter!
+// 今回は少なくとも2つの書き方があるが、書く分量がかなり異なる。
 
 use std::num::ParseIntError;
 
@@ -20,14 +14,15 @@ fn total_cost(item_quantity: &str) -> Result<i32, ParseIntError> {
     let processing_fee = 1;
     let cost_per_item = 5;
 
-    // TODO: Handle the error case as described above.
+    // TODO: エラーを上記の記載した条件で処理してください。
+    // 
     let qty = item_quantity.parse::<i32>();
 
     Ok(qty * cost_per_item + processing_fee)
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

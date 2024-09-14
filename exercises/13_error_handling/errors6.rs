@@ -1,8 +1,6 @@
-// Using catch-all error types like `Box<dyn Error>` isn't recommended for
-// library code where callers might want to make decisions based on the error
-// content instead of printing it out or propagating it further. Here, we define
-// a custom error type to make it possible for callers to decide what to do next
-// when our function returns an error.
+// `Box<dyn Error>`のような全てのエラーをキャッチする型は、コンテンツのエラーを出力したり、
+//さらにエラーを伝播する代わりにエラーに基づいて決断を下したいライブラリに対して利用するのは好ましくない。
+// そこでカスタムのエラー型を定義し、関数を呼び出した側が次に何をすべきか、関数がいつエラーを返すべきかを決められるようにします。
 
 use std::num::ParseIntError;
 
@@ -12,7 +10,7 @@ enum CreationError {
     Zero,
 }
 
-// A custom error type that we will be using in `PositiveNonzeroInteger::parse`.
+// カウタムエラーとして`PositiveNonzeroInteger::parse`を使います。
 #[derive(PartialEq, Debug)]
 enum ParsePosNonzeroError {
     Creation(CreationError),
@@ -24,7 +22,7 @@ impl ParsePosNonzeroError {
         Self::Creation(err)
     }
 
-    // TODO: Add another error conversion function here.
+    // TODO: 他のエラー処理を書いてください。
     // fn from_parse_int(???) -> Self { ??? }
 }
 
@@ -41,15 +39,14 @@ impl PositiveNonzeroInteger {
     }
 
     fn parse(s: &str) -> Result<Self, ParsePosNonzeroError> {
-        // TODO: change this to return an appropriate error instead of panicking
-        // when `parse()` returns an error.
+        // TODO: `parse()`でpanicエラーを返してしまう前に適切なエラーを返すように修正してください。
         let x: i64 = s.parse().unwrap();
         Self::new(x).map_err(ParsePosNonzeroError::from_creation)
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
