@@ -1,13 +1,12 @@
-// This function returns how much icecream there is left in the fridge.
-// If it's before 22:00 (24-hour system), then 5 scoops are left. At 22:00,
-// someone eats it all, so no icecream is left (value 0). Return `None` if
-// `hour_of_day` is higher than 23.
+// この関数は冷蔵庫のアイスクリームの数を返す関数です。
+// 22時より前の時間の場合は5個のアイスが残っており、22時に誰かが全てアイスを食べてしまったため個数は0になってしまいました。
+// 23時より遅い時間の場合には`None`を返してください。
 fn maybe_icecream(hour_of_day: u16) -> Option<u16> {
-    // TODO: Complete the function body.
+    // TODO: 関数の中身を埋めてください。
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
@@ -16,11 +15,10 @@ mod tests {
 
     #[test]
     fn raw_value() {
-        // TODO: Fix this test. How do you get the value contained in the
-        // Option?
+        // TODO: テストの一部を修正して、オプション型から数値を取得できるようにしてください。
         let icecreams = maybe_icecream(12);
 
-        assert_eq!(icecreams, 5); // Don't change this line.
+        assert_eq!(icecreams, 5); // ここの値は変えないでください。
     }
 
     #[test]
