@@ -1,18 +1,18 @@
-// This powerful wrapper provides the ability to store a positive integer value.
-// TODO: Rewrite it using a generic so that it supports wrapping ANY type.
-struct Wrapper {
-    value: u32,
+// 正の整数の値を格納する機能を提供する`Wrapper`です。
+// 他の型でもラップできるように修正してください。
+struct Wrapper <T> {
+    value: T,
 }
 
-// TODO: Adapt the struct's implementation to be generic over the wrapped value.
-impl Wrapper {
-    fn new(value: u32) -> Self {
+// TODO: 構造体の実装を、ラップされた値に対してジェネリックになるように適合させる。
+impl <T> Wrapper<T>  {
+    fn new (value: T) -> Self {
         Wrapper { value }
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

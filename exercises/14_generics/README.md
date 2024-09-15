@@ -1,11 +1,11 @@
-# Generics
+# ジェネリクス
 
-Generics is the topic of generalizing types and functionalities to broader cases.
-This is extremely useful for reducing code duplication in many ways, but can call for some rather involved syntax.
-Namely, being generic requires taking great care to specify over which types a generic type is actually considered valid.
-The simplest and most common use of generics is for type parameters.
+ジェネリクスは型を生成や様々なケースに対応できる機能のトピックです。
+ジェネリクスは色んな方法でコードの重複を減らすことができとても便利ですが、かなり複雑な構文が必要になることがある。
+すなわち、ジェネリックであるためには、ジェネリック型が実際にどの型に対して有効であるとみなされるかを、細心の注意を払って指定する必要がある。
+最も簡単で一般的な使い方は型のパラメータです。
 
-## Further information
+## 補足情報
 
-- [Generic Data Types](https://doc.rust-lang.org/book/ch10-01-syntax.html)
-- [Bounds](https://doc.rust-lang.org/rust-by-example/generics/bounds.html)
+- [Generic Data Types](https://doc.rust-jp.rs/book-ja/ch10-01-syntax.html)
+- [Bounds](https://doc.rust-jp.rs/rust-by-example-ja/generics/bounds.html)
