@@ -1,19 +1,17 @@
-# Traits
+# トレイト
 
-A trait is a collection of methods.
+トレイトはメソッドの集合体である。
+データ型はトレイトを埋め込むことができる。つまりトレイトを作り上げるメソッドはデータ型として定義される。例えば、`String`型は`From<&str>`を埋め込んでいる。これにより`String::from("hello")`というコードを書くことができるようになる。
+つまりトレイトはJavaのインターフェースやC++の抽象クラスに似たものとなっている。
 
-Data types can implement traits. To do so, the methods making up the trait are defined for the data type. For example, the `String` data type implements the `From<&str>` trait. This allows a user to write `String::from("hello")`.
+Rustにおける一般的なトレイトには以下が含まれます：
 
-In this way, traits are somewhat similar to Java interfaces and C++ abstract classes.
+- `Clone` (`clone`するメソッド)
+- `Display` (`{}`によって表示する文を整形できる)
+- `Debug` (`{:?}`によって表示する文を整形できる)
 
-Some additional common Rust traits include:
+トレイトはデータ型間の共有された振る舞いを示すため、ジェネリティクスを書く際に便利です。
 
-- `Clone` (the `clone` method)
-- `Display` (which allows formatted display via `{}`)
-- `Debug` (which allows formatted display via `{:?}`)
+## 補足情報
 
-Because traits indicate shared behavior between data types, they are useful when writing generics.
-
-## Further information
-
-- [Traits](https://doc.rust-lang.org/book/ch10-02-traits.html)
+- [Traits](https://doc.rust-jp.rs/book-ja/ch10-02-traits.html)

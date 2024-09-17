@@ -10,13 +10,13 @@ struct OtherSoftware;
 impl Licensed for SomeSoftware {}
 impl Licensed for OtherSoftware {}
 
-// TODO: Fix the compiler error by only changing the signature of this function.
+// TODO: この関数の入出力を変更するだけでコンパイルエラーを修正してください。
 fn compare_license_types(software1: ???, software2: ???) -> bool {
     software1.licensing_info() == software2.licensing_info()
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

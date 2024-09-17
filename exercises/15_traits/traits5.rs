@@ -18,13 +18,13 @@ struct OtherStruct;
 impl SomeTrait for OtherStruct {}
 impl OtherTrait for OtherStruct {}
 
-// TODO: Fix the compiler error by only changing the signature of this function.
+// TODO: この関数の入出力を変更するだけでコンパイルエラーを修正してください。
 fn some_func(item: ???) -> bool {
     item.some_function() && item.other_function()
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

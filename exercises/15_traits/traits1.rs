@@ -1,11 +1,11 @@
-// The trait `AppendBar` has only one function which appends "Bar" to any object
-// implementing this trait.
+// `AppendBar`トレイトは、このトレイトを移植したいかなるオブジェクトに対して"Bar"という文字列を末尾に追加する
+//　関数のみを持ちます。
 trait AppendBar {
     fn append_bar(self) -> Self;
 }
 
 impl AppendBar for String {
-    // TODO: Implement `AppendBar` for the type `String`.
+    // TODO:`AppendBar`トレイトを`String`型に移植してください。
 }
 
 fn main() {

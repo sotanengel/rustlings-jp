@@ -1,10 +1,10 @@
 #![allow(dead_code)]
 
 trait Licensed {
-    // TODO: Add a default implementation for `licensing_info` so that
-    // implementors like the two structs below can share that default behavior
-    // without repeating the function.
-    // The default license information should be the string "Default license".
+    // TODO: `licensing_info`というデフォルトの移植を追加してください。
+    // これにより下記に記す二つの構造体のような移植が関数を繰り返すことなくデフォルトの振る舞いとしてシェアできるようになります。
+    // デフォルトのライセンス情報は"Default license"という文字列としてください。
+
     fn licensing_info(&self) -> String;
 }
 
@@ -16,11 +16,11 @@ struct OtherSoftware {
     version_number: String,
 }
 
-impl Licensed for SomeSoftware {} // Don't edit this line.
-impl Licensed for OtherSoftware {} // Don't edit this line.
+impl Licensed for SomeSoftware {} // この行は変えないでください。
+impl Licensed for OtherSoftware {} // この行は変えないでください。
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

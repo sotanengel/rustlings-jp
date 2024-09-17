@@ -2,11 +2,11 @@ trait AppendBar {
     fn append_bar(self) -> Self;
 }
 
-// TODO: Implement the trait `AppendBar` for a vector of strings.
-// `append_bar` should push the string "Bar" into the vector.
+// TODO: `AppendBar`を文字列の配列型に移植してください。
+// `append_bar`は"Bar"を配列の末尾に追加するメソッドです。
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
