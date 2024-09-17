@@ -1,6 +1,6 @@
-// Lifetimes are also needed when structs hold references.
+// ライフタイムは構造体が参照を持つ際にも必要になります。
 
-// TODO: Fix the compiler errors about the struct.
+// TODO: 構造体に関するコンパイルエラーを修正してください。
 struct Book {
     author: &str,
     title: &str,
