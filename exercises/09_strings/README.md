@@ -3,6 +3,6 @@
 Rustにはスライスの文字列`&str`(`&str`)と所有権のある文字列(`String`)という2種類の文字列が存在します。
 あなたがどちらの型を使うか指示はしませんが、判別や作成方法、使い方などについてこのエクササイズでは紹介します。
 
-## Further information
+補足情報
 
 - [Strings](hhttps://doc.rust-jp.rs/book-ja/ch08-02-strings.html)

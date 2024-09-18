@@ -9,7 +9,7 @@
 
 もしもライフタイムの注釈をさらに学びたいのであれば、[lifetimekata](https://tfpk.github.io/lifetimekata/) プロジェクトがRustlingsに似たエクササイズを作成しています(ただし全てライフタイムに関するものですが)。
 
-## Further information
+補足情報
 
 - [Lifetimes (in Rust By Example)](https://doc.rust-jp.rs/rust-by-example-ja/scope/lifetime.html)
 - [Validating References with Lifetimes](https://doc.rust-lang.org/book/ch10-03-lifetime-syntax.html)

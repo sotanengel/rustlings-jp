@@ -15,7 +15,7 @@ Furthermore, the `std::str` module offers a trait called [`FromStr`](https://doc
 
 These should be the main ways ***within the standard library*** to convert data into your desired types.
 
-## Further information
+補足情報
 
 These are not directly covered in the book, but the standard library has a great documentation for it.
 
