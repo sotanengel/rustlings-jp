@@ -1,7 +1,8 @@
-# Tests
+# テスト
 
 Going out of order from the book to cover tests -- many of the following exercises will ask you to make tests pass!
+Rubyの教科書の順序から外れてここではテストを取り扱う、この章の練習問題の多くはテストを合格する方法をあなたに出題します。
 
 ## Further information
 
-- [Writing Tests](https://doc.rust-lang.org/book/ch11-01-writing-tests.html)
+- [Writing Tests](https://doc.rust-jp.rs/book-ja/ch11-01-writing-tests.html)

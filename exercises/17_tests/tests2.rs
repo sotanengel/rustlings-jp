@@ -1,11 +1,10 @@
-// Calculates the power of 2 using a bit shift.
-// `1 << n` is equivalent to "2 to the power of n".
+// 2の累乗を計算するメソッドです。`1 << n`は`2のn乗`と同義です。
 fn power_of_2(n: u8) -> u64 {
     1 << n
 }
 
 fn main() {
-    // You can optionally experiment here.
+  // この行で関数のテストができます。
 }
 
 #[cfg(test)]
@@ -14,7 +13,7 @@ mod tests {
 
     #[test]
     fn you_can_assert_eq() {
-        // TODO: Test the function `power_of_2` with some values.
+        // TODO: `power_of_2`に値を入れてテストしてみてください。
         assert_eq!();
         assert_eq!();
         assert_eq!();
