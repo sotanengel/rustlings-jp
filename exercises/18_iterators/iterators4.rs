@@ -1,19 +1,19 @@
 fn factorial(num: u64) -> u64 {
-    // TODO: Complete this function to return the factorial of `num` which is
-    // defined as `1 * 2 * 3 * … * num`.
-    // https://en.wikipedia.org/wiki/Factorial
+    // TODO: 以下のような階乗を実行する関数`num`を完成させてください。
+    // `1 * 2 * 3 * … * num`。
+    // https://ja.wikipedia.org/wiki/%E9%9A%8E%E4%B9%97
     //
-    // Do not use:
-    // - early returns (using the `return` keyword explicitly)
-    // Try not to use:
-    // - imperative style loops (for/while)
-    // - additional variables
-    // For an extra challenge, don't use:
-    // - recursion
+    // 以下の方法は禁止です:
+    // - 早期にreturnを使う (明示的にreturnを使う) 
+    // 以下の方法はできるだけ使わないでください:
+    // - ループ (for/while)
+    // - 変数を追加する
+    // 朝鮮問題、できれば以下を使わないでください:
+    // - 再起
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

@@ -1,8 +1,8 @@
-# Iterators
+# イテレータ
 
-This section will teach you about Iterators.
+この章ではイテレータについて教えます。
 
-## Further information
+## 補足情報
 
-- [Iterator](https://doc.rust-lang.org/book/ch13-02-iterators.html)
+- [Iterator](https://doc.rust-jp.rs/book-ja/ch13-02-iterators.html)
 - [Iterator documentation](https://doc.rust-lang.org/stable/std/iter/)

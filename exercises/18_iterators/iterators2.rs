@@ -1,8 +1,7 @@
-// In this exercise, you'll learn some of the unique advantages that iterators
-// can offer.
+// このエクササイズではイテレータ特有の有利な点をいくつか学びます。
 
-// TODO: Complete the `capitalize_first` function.
-// "hello" -> "Hello"
+// TODO: Complete the `capitalize_first`関数を完成させてください。
+// "hello"が入力された場合に"Hello"を返します。
 fn capitalize_first(input: &str) -> String {
     let mut chars = input.chars();
     match chars.next() {
@@ -11,22 +10,22 @@ fn capitalize_first(input: &str) -> String {
     }
 }
 
-// TODO: Apply the `capitalize_first` function to a slice of string slices.
-// Return a vector of strings.
-// ["hello", "world"] -> ["Hello", "World"]
+// TODO:`capitalize_first`関数を文字列のスライスに対して実行する関数を書いてください。
+// 返り値は文字列の配列を返してください。
+// ["hello", "world"]が入力された場合に["Hello", "World"]を返します。
 fn capitalize_words_vector(words: &[&str]) -> Vec<String> {
     // ???
 }
 
-// TODO: Apply the `capitalize_first` function again to a slice of string
-// slices. Return a single string.
+// TODO: `capitalize_first`関数をスライスの文字列に対して実行する関数を書いてください。
+// 返り値は一つの文字列で返してください。
 // ["hello", " ", "world"] -> "Hello World"
 fn capitalize_words_string(words: &[&str]) -> String {
     // ???
 }
 
 fn main() {
-    // You can optionally experiment here.
+   // この行で関数のテストができます。 
 }
 
 #[cfg(test)]

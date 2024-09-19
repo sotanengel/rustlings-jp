@@ -1,35 +1,35 @@
 #[derive(Debug, PartialEq, Eq)]
 enum DivisionError {
-    // Example: 42 / 0
+    // 例: 42 / 0
     DivideByZero,
-    // Only case for `i64`: `i64::MIN / -1` because the result is `i64::MAX + 1`
+    // `i64`の場合のみ: `i64::MIN / -1`を実行すると`i64::MAX + 1`になってしまうためエラーとなる。
     IntegerOverflow,
-    // Example: 5 / 2 = 2.5
+    // 例: 5 / 2 = 2.5
     NotDivisible,
 }
 
-// TODO: Calculate `a` divided by `b` if `a` is evenly divisible by `b`.
-// Otherwise, return a suitable error.
+// TODO: `a`が`b`で均等に割り切れる場合のみ、`a` を`b`で割ることを実行してください。.
+// そうでなければ状況に応じてエラーを返してください。
 fn divide(a: i64, b: i64) -> Result<i64, DivisionError> {
-    todo!();
+  todo!();
 }
 
-// TODO: Add the correct return type and complete the function body.
-// Desired output: `Ok([1, 11, 1426, 3])`
+// TODO: 正しい返り値の型を記載し、関数の中身を完成させてください。
+// 望まれている返り値: `Ok([1, 11, 1426, 3])`
 fn result_with_list() {
     let numbers = [27, 297, 38502, 81];
     let division_results = numbers.into_iter().map(|n| divide(n, 27));
 }
 
-// TODO: Add the correct return type and complete the function body.
-// Desired output: `[Ok(1), Ok(11), Ok(1426), Ok(3)]`
+// TODO: 正しい返り値の型を記載し、関数の中身を完成させてください。
+// 望まれている返り値: `[Ok(1), Ok(11), Ok(1426), Ok(3)]`
 fn list_of_results() {
     let numbers = [27, 297, 38502, 81];
     let division_results = numbers.into_iter().map(|n| divide(n, 27));
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

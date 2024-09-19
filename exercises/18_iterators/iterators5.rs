@@ -1,8 +1,8 @@
-// Let's define a simple model to track Rustlings' exercise progress. Progress
-// will be modelled using a hash map. The name of the exercise is the key and
-// the progress is the value. Two counting functions were created to count the
-// number of exercises with a given progress. Recreate this counting
-// functionality using iterators. Try to not use imperative loops (for/while).
+// Rustlingsのエクササイズの進捗を追跡できる簡単なモデルを定義しましょう。
+// 進捗はハッシュマップでモデリングすることととします。
+// エクササイズの名前をキー、進捗をバリューで管理します。２つのカウントをする関数は進んだエクササイズの数を集計します。
+// このカウントをする機能をイテレータを使うことで再作成しましょう。
+// forやwhileを使うことなく実装してみましょう。
 
 use std::collections::HashMap;
 
@@ -23,10 +23,9 @@ fn count_for(map: &HashMap<String, Progress>, value: Progress) -> usize {
     count
 }
 
-// TODO: Implement the functionality of `count_for` but with an iterator instead
-// of a `for` loop.
+// TODO: `for`ループの代わりにイテレータによって`count_for`の機能を移植してください。
 fn count_iterator(map: &HashMap<String, Progress>, value: Progress) -> usize {
-    // `map` is a hash map with `String` keys and `Progress` values.
+    // `map`は`String`のキーや`Progress`型の値を持つ。
     // map = { "variables1": Complete, "from_str": None, … }
 }
 
@@ -42,16 +41,15 @@ fn count_collection_for(collection: &[HashMap<String, Progress>], value: Progres
     count
 }
 
-// TODO: Implement the functionality of `count_collection_for` but with an
-// iterator instead of a `for` loop.
+// TODO: `for`ループの代わりにイテレータによって`count_collection_for`の機能を実装してください。
 fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Progress) -> usize {
-    // `collection` is a slice of hash maps.
+    // `collection` はスライスのハッシュマップです。
     // collection = [{ "variables1": Complete, "from_str": None, … },
     //               { "variables2": Complete, … }, … ]
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
