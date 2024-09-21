@@ -1,34 +1,33 @@
-// In this exercise, we are given a `Vec` of `u32` called `numbers` with values
-// ranging from 0 to 99. We would like to use this set of numbers within 8
-// different threads simultaneously. Each thread is going to get the sum of
-// every eighth value with an offset.
+// このエクササイズでは`numbers`という`u32`型の0~99までの要素数を持つ配列が与えられます。
+// この配列を8個の異なるスレッドで同時並行に利用したい。
+// それぞれのスレッドはオフセットの8番目の値の合計値を取得する。
+// 例えば、
+// 最初のスレッド(オフセット0)：0, 8, 16...の合計
+// ２番目のスレッド(オフセット1)：1, 9, 17...の合計
+// ３番目のスレッド(オフセット2)：2, 10, 18...の合計
+// 8番目のスレッド(オフセット7)：7, , 18...の合計
 //
-// The first thread (offset 0), will sum 0, 8, 16, …
-// The second thread (offset 1), will sum 1, 9, 17, …
-// The third thread (offset 2), will sum 2, 10, 18, …
-// …
-// The eighth thread (offset 7), will sum 7, 15, 23, …
-//
-// Each thread should own a reference-counting pointer to the vector of
-// numbers. But `Rc` isn't thread-safe. Therefore, we need to use `Arc`.
-//
-// Don't get distracted by how threads are spawned and joined. We will practice
-// that later in the exercises about threads.
+// それぞれのスレッドは参照を累計する配列の数のポインターを所有すべきであるが、
+//`Rc`はスレッドとして安全ではない。そこで`Arc`を使う。
+// 
+// このエクササイズではスレッドがどのように生成され、使われるかに気を取られないでください。
+// スレッドについては後のエクササイズで扱います。
 
-// Don't change the lines below.
+
+// この2行は変更しないでください。
 #![forbid(unused_imports)]
 use std::{sync::Arc, thread};
 
 fn main() {
     let numbers: Vec<_> = (0..100u32).collect();
 
-    // TODO: Define `shared_numbers` by using `Arc`.
+    // TODO: `Arc`を使って`shared_numbers`を定義してください。
     // let shared_numbers = ???;
 
     let mut join_handles = Vec::new();
 
     for offset in 0..8 {
-        // TODO: Define `child_numbers` using `shared_numbers`.
+        // TODO: `shared_numbers`を使って`child_numbers`を定義してください。
         // let child_numbers = ???;
 
         let handle = thread::spawn(move || {

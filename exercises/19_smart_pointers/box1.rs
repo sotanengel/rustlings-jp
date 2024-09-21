@@ -1,27 +1,24 @@
-// At compile time, Rust needs to know how much space a type takes up. This
-// becomes problematic for recursive types, where a value can have as part of
-// itself another value of the same type. To get around the issue, we can use a
-// `Box` - a smart pointer used to store data on the heap, which also allows us
-// to wrap a recursive type.
-//
-// The recursive type we're implementing in this exercise is the "cons list", a
-// data structure frequently found in functional programming languages. Each
-// item in a cons list contains two elements: The value of the current item and
-// the next item. The last item is a value called `Nil`.
+// コンパイルする時、Rustは型がどれだけの領域を使うか知る必要がある。これは再帰データ型の取り扱いに問題を引き起こす。
+// なぜならその値が他の値の一部になる可能性があるからだ。
+// この問題を取り扱うために、`Box`というデータをヒープ上に保管するために使われるスマートポインタを利用することができる。
+// このスマートポインタにより再帰データ型をラップするができるようになる。
+// このエクササイズで実装する再帰データ型は「"cons list"」である。
+// このリストは関数型プログラミング言語でよく見るデータ構造である。
+// リスト内のそれぞれの要素は２つの属性を含んでいる。現在の要素と次の要素である。最後の要素は次の要素として`Nill`を呼び出す。
 
-// TODO: Use a `Box` in the enum definition to make the code compile.
+// TODO: コードがコンパイルできるようにenumの定義の中で`Box`を利用してください。
 #[derive(PartialEq, Debug)]
 enum List {
     Cons(i32, List),
     Nil,
 }
 
-// TODO: Create an empty cons list.
+// TODO: 空のconsリスト(Nil)を作成してください。
 fn create_empty_list() -> List {
     todo!()
 }
 
-// TODO: Create a non-empty cons list.
+// TODO:空ではないconsリスト(どれだけ再帰するかは自身で決めて大丈夫です)を作成してください。例. (42, (35, Nil))など
 fn create_non_empty_list() -> List {
     todo!()
 }

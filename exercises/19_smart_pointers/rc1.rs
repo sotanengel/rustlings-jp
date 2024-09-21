@@ -1,7 +1,6 @@
-// In this exercise, we want to express the concept of multiple owners via the
-// `Rc<T>` type. This is a model of our solar system - there is a `Sun` type and
-// multiple `Planet`s. The planets take ownership of the sun, indicating that
-// they revolve around the sun.
+// このエクササイズでは`Rc<T>`型によって複数の所有者の概念を表現したい。
+// 以下のコードは太陽系のモデルで、`Sun`型と複数の惑星が存在します。
+// 惑星は太陽の所有権を持っており、太陽の周りを回転します。
 
 use std::rc::Rc;
 
@@ -28,7 +27,7 @@ impl Planet {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

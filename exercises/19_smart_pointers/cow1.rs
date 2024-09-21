@@ -1,7 +1,7 @@
-// This exercise explores the `Cow` (Clone-On-Write) smart pointer. It can
-// enclose and provide immutable access to borrowed data and clone the data
-// lazily when mutation or ownership is required. The type is designed to work
-// with general borrowed data via the `Borrow` trait.
+// このエクササイズでは`Cow`というスマートポインターを探求する。
+// このポインターは借用したデータを囲い込み、変更が可能なアクセスを可能にする。
+// さらに変更や所有が必要になった場合にはデータを遅延してクローンすることができる。
+// この型は`Borrow`トレイト経由で一般的な借用データを扱うために設計された。
 
 use std::borrow::Cow;
 
@@ -9,14 +9,14 @@ fn abs_all(input: &mut Cow<[i32]>) {
     for ind in 0..input.len() {
         let value = input[ind];
         if value < 0 {
-            // Clones into a vector if not already owned.
+            // もしも所有していなければ配列にクローンを作る。
             input.to_mut()[ind] = -value;
         }
     }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
@@ -25,7 +25,7 @@ mod tests {
 
     #[test]
     fn reference_mutation() {
-        // Clone occurs because `input` needs to be mutated.
+        // クローンは`input`の変更が必要のため実行される。
         let vec = vec![-1, 0, 1];
         let mut input = Cow::from(&vec);
         abs_all(&mut input);
@@ -34,36 +34,35 @@ mod tests {
 
     #[test]
     fn reference_no_mutation() {
-        // No clone occurs because `input` doesn't need to be mutated.
+        // クローンは`input`の変更が必要ないため、実行されない。
         let vec = vec![0, 1, 2];
         let mut input = Cow::from(&vec);
         abs_all(&mut input);
-        // TODO: Replace `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
+        // TODO: `Cow::Owned(_)`か`Cow::Borrowed(_)`に置き換えてください。
         assert!(matches!(input, todo!()));
     }
 
     #[test]
     fn owned_no_mutation() {
-        // We can also pass `vec` without `&` so `Cow` owns it directly. In this
-        // case, no mutation occurs (all numbers are already absolute) and thus
-        // also no clone. But the result is still owned because it was never
-        // borrowed or mutated.
+        // `&`なしに`vec`のコンパイルが通るので、`Cow`は`vec`を直接所有している。
+        // この場合、変更は発生せず(全ての要素はすでに絶対値になっているため)、クローンも発生しない。
+        // しかしその結果は所有され続ける。なぜなら`vec`は決して借用や変更が行われないからである。
+
         let vec = vec![0, 1, 2];
         let mut input = Cow::from(vec);
         abs_all(&mut input);
-        // TODO: Replace `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
+        // TODO: `Cow::Owned(_)`か`Cow::Borrowed(_)`に置き換えてください。
         assert!(matches!(input, todo!()));
     }
 
     #[test]
     fn owned_mutation() {
-        // Of course this is also the case if a mutation does occur (not all
-        // numbers are absolute). In this case, the call to `to_mut()` in the
-        // `abs_all` function returns a reference to the same data as before.
+        // もちろん、変更が発生するケースも存在する。
+        // その場合には`abs_all`関数で`to_mut()`を呼び出して以前に同じデータを参照を変換する。
         let vec = vec![-1, 0, 1];
         let mut input = Cow::from(vec);
         abs_all(&mut input);
-        // TODO: Replace `todo!()` with `Cow::Owned(_)` or `Cow::Borrowed(_)`.
+        // TODO: `Cow::Owned(_)`か`Cow::Borrowed(_)`に置き換えてください。
         assert!(matches!(input, todo!()));
     }
 }
