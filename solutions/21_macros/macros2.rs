@@ -1,4 +1,10 @@
+// マクロの定義する位置を呼び出す場所の前に移動しました。
+macro_rules! my_macro {
+  () => {
+      println!("Check out my macro!");
+  };
+}
+
 fn main() {
-    // DON'T EDIT THIS SOLUTION FILE!
-    // It will be automatically filled after you finish the exercise.
+  my_macro!();
 }

@@ -1,4 +1,15 @@
+// マクロの各条件分岐を分けるためにセミコロンを追加してください。
+#[rustfmt::skip]
+macro_rules! my_macro {
+    () => {
+        println!("Check out my macro!");
+    };
+    ($val:expr) => {
+        println!("Look at this other macro: {}", $val);
+    };
+}
+
 fn main() {
-    // DON'T EDIT THIS SOLUTION FILE!
-    // It will be automatically filled after you finish the exercise.
+    my_macro!();
+    my_macro!(7777);
 }

@@ -1,5 +1,4 @@
-// TODO: Fix the compiler error without taking the macro definition out of this
-// module.
+// TODO: マクロの定義をモジュール外に出すことなくコンパイルエラーを修正してください。
 mod macros {
     macro_rules! my_macro {
         () => {

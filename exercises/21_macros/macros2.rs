@@ -2,7 +2,7 @@ fn main() {
     my_macro!();
 }
 
-// TODO: Fix the compiler error by moving the whole definition of this macro.
+// TODO: マクロの定義の位置を修正してコンパイルエラーを修正してください。
 macro_rules! my_macro {
     () => {
         println!("Check out my macro!");

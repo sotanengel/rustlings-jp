@@ -5,6 +5,6 @@ macro_rules! my_macro {
 }
 
 fn main() {
-    // TODO: Fix the macro call.
+    // TODO: マクロの呼び出し方を修正してください。
     my_macro();
 }

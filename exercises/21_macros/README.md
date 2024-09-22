@@ -1,14 +1,13 @@
-# Macros
+# マクロ
 
-Rust's macro system is very powerful, but also kind of difficult to wrap your
-head around. We're not going to teach you how to write your own fully-featured
-macros. Instead, we'll show you how to use and create them.
+Rustのマクロはとても強力であるが、頭を使って実装しなければならない。
+このエクササイズでは完全なマクロの書き方を教えることはしないが、
+代わりにマクロの使い方やクレート化の方法を教えます。
 
-If you'd like to learn more about writing your own macros, the
-[macrokata](https://github.com/tfpk/macrokata) project has a similar style
-of exercises to Rustlings, but is all about learning to write Macros.
+もしもマクロの書き方を学びたいのであれば、
+Rustlingsのエクササイズに似た形式の[macrokata](https://github.com/tfpk/macrokata)ではマクロを取り扱っているので試してみてほしい。
 
 補足情報
 
-- [Macros](https://doc.rust-lang.org/book/ch19-06-macros.html)
+- [Macros](https://doc.rust-jp.rs/book-ja/ch19-06-macros.html)
 - [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)
