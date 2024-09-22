@@ -15,8 +15,8 @@ impl Queue {
 }
 
 fn send_tx(q: Queue, tx: mpsc::Sender<u32>) {
-    // TODO: We want to send `tx` to both threads. But currently, it is moved
-    // into the first thread. How could you solve this problem?
+    // TODO: `tx`を複数のスレッドに送信したいが、現状の実装では最初のスレッドに`tx`が移動してしまう。
+    // 関数の入出力の記載は変更せずに、関数の中身を書き換えることで対応してください。
     thread::spawn(move || {
         for val in q.first_half {
             println!("Sending {val:?}");
@@ -35,7 +35,7 @@ fn send_tx(q: Queue, tx: mpsc::Sender<u32>) {
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

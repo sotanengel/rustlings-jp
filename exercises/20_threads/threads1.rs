@@ -1,7 +1,6 @@
-// This program spawns multiple threads that each run for at least 250ms, and
-// each thread returns how much time they took to complete. The program should
-// wait until all the spawned threads have finished and should collect their
-// return values into a vector.
+// このスレッドは250ms内にそれぞれが実行される複数のスレッドを持っている。
+// そして、それぞれのスレッドは実行完了までにどれだけの時間がかかったかをリターンする。
+// このプログラムは全てのスレッドが完了するまで持続する必要があり、実行結果を配列に格納する必要がある。
 
 use std::{
     thread,
@@ -22,8 +21,7 @@ fn main() {
 
     let mut results = Vec::new();
     for handle in handles {
-        // TODO: Collect the results of all threads into the `results` vector.
-        // Use the `JoinHandle` struct which is returned by `thread::spawn`.
+        // TODO: 全てのスレッドから得られた結果を`results`配列に収集してください。ここでは`thread::spawn`を返り値としてもつ`JoinHandle`構造体を利用してください。
     }
 
     if results.len() != 10 {

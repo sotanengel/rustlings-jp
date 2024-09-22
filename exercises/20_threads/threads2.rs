@@ -1,6 +1,5 @@
-// Building on the last exercise, we want all of the threads to complete their
-// work. But this time, the spawned threads need to be in charge of updating a
-// shared value: `JobStatus.jobs_done`
+// 先ほどのエクササイズを踏まえ、全てのスレッドがそれぞれのタスクを完了させるようにしたい。
+// しかしこのエクササイズでは`JobStatus.jobs_done`という共有された値を更新する担当が必要である。
 
 use std::{sync::Arc, thread, time::Duration};
 
@@ -9,7 +8,8 @@ struct JobStatus {
 }
 
 fn main() {
-    // TODO: `Arc` isn't enough if you want a **mutable** shared state.
+    // TODO: もしも可変な共有された状態が必要ならば、`Arc`は不十分である。
+    // 必要なライブラリがあれば適宜useの行で追加すること。
     let status = Arc::new(JobStatus { jobs_done: 0 });
 
     let mut handles = Vec::new();
@@ -18,17 +18,17 @@ fn main() {
         let handle = thread::spawn(move || {
             thread::sleep(Duration::from_millis(250));
 
-            // TODO: You must take an action before you update a shared value.
+            // TODO: 共有された値の更新する前にこれを実行する必要がある。
             status_shared.jobs_done += 1;
         });
         handles.push(handle);
     }
 
-    // Waiting for all jobs to complete.
+    // 全てのジョブが完了するまで待つ。
     for handle in handles {
         handle.join().unwrap();
     }
 
-    // TODO: Print the value of `JobStatus.jobs_done`.
+    // TODO: `JobStatus.jobs_done`の値を出力してください。
     println!("Jobs done: {}", todo!());
 }
