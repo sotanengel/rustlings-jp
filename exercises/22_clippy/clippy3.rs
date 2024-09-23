@@ -1,5 +1,5 @@
-// Here are some more easy Clippy fixes so you can see its utility 📎
-// TODO: Fix all the Clippy lints.
+// このエクササイズにはいくつかのClippyのエラーが存在します 📎
+// TODO: 全てのエラーを修正してください。
 
 #[rustfmt::skip]
 #[allow(unused_variables, unused_assignments)]
