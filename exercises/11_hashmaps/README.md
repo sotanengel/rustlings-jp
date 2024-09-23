@@ -6,6 +6,6 @@
 
 ハッシュマップは配列とは違うデータ構造を持ちます。
 
-## 補足情報
+# 補足情報
 
 - [Storing Keys with Associated Values in Hash Maps](https://doc.rust-lang.org/book/ch08-03-hash-maps.html)

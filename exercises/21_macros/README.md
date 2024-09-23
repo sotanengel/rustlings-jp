@@ -7,7 +7,7 @@ Rustのマクロはとても強力であるが、頭を使って実装しなけ�
 もしもマクロの書き方を学びたいのであれば、
 Rustlingsのエクササイズに似た形式の[macrokata](https://github.com/tfpk/macrokata)ではマクロを取り扱っているので試してみてほしい。
 
-補足情報
+# 補足情報
 
 - [Macros](https://doc.rust-jp.rs/book-ja/ch19-06-macros.html)
 - [The Little Book of Rust Macros](https://veykril.github.io/tlborm/)

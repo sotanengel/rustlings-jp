@@ -1,21 +1,28 @@
-# Type conversions
+# 型の変換
 
-Rust offers a multitude of ways to convert a value of a given type into another type.
+Rustはある型を他の方に変える複数の手段がある。
 
-The simplest form of type conversion is a type cast expression. It is denoted with the binary operator `as`. For instance, `println!("{}", 1 + 1.0);` would not compile, since `1` is an integer while `1.0` is a float. However, `println!("{}", 1 as f32 + 1.0)` should compile. The exercise [`using_as`](using_as.rs) tries to cover this.
+最も簡単な型の変換はキャスト式です。キャスト式はバイナリのオペレータである`as`で示されます。
+例えば`println!("{}", 1 + 1.0);`はコンパイルされません。`1`(整数型)と`1.0`(float)で型が異なるからです。
+しかし型の変換を行った`println!("{}", 1 as f32 + 1.0)`はコンパイルができます。
+[`using_as`](using_as.rs)のエクササイズではこの問題を扱っています。
 
-Rust also offers traits that facilitate type conversions upon implementation. These traits can be found under the [`convert`](https://doc.rust-lang.org/std/convert/index.html) module.
+Rustは実装時に型変換を容易にするトレイトも提供している。
+このトレイトは[`convert`](https://doc.rust-lang.org/std/convert/index.html)モジュールなどで見ることができます。
 The traits are the following:
 
-- `From` and `Into` covered in [`from_into`](from_into.rs)
-- `TryFrom` and `TryInto` covered in [`try_from_into`](try_from_into.rs)
-- `AsRef` and `AsMut` covered in [`as_ref_mut`](as_ref_mut.rs)
+- `From` と `Into`を変換する(※ [`from_into`](from_into.rs)で扱います。)
+- `TryFrom` と `TryInto`を変換する(※ [`try_from_into`](try_from_into.rs)で扱います。)
+- `AsRef` と `AsMut`を変換する(※ [`as_ref_mut`](as_ref_mut.rs)で扱います。)
 
-Furthermore, the `std::str` module offers a trait called [`FromStr`](https://doc.rust-lang.org/std/str/trait.FromStr.html) which helps with converting strings into target types via the `parse` method on strings. If properly implemented for a given type `Person`, then `let p: Person = "Mark,20".parse().unwrap()` should both compile and run without panicking.
+さらに`std::str`モジュールは[`FromStr`](https://doc.rust-lang.org/std/str/trait.FromStr.html)というトレートを提供しており、
+このトレートによって`parse`メソッド経由で文字列を狙った方に変換することが容易になる。
+もしも`Person`型を導入する場合、`let p: Person = "Mark,20".parse().unwrap()`はコンパイルと実行がパニックなく行われる。
 
-These should be the main ways ***within the standard library*** to convert data into your desired types.
 
-補足情報
+これらの型変換は***within the standard library***で示された一般的な方法でデータをあなたが望む型に変更するべきです。
+
+# 補足情報
 
 These are not directly covered in the book, but the standard library has a great documentation for it.
 

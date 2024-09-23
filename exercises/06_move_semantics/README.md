@@ -2,7 +2,7 @@
 
 このエクササイズは[pnkfelix](https://github.com/pnkfelix)の[Rust Tutorial](https://pnkfelix.github.io/rust-examples-icfp2014/)を参考にしています。 -- Thank you Felix!!!
 
-## 補足情報
+# 補足情報
 
 このセクションでは、以下のリンクが学習の際に重要となってきます。
 
