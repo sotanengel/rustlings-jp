@@ -1,6 +1,6 @@
 # Rustlings-jp 🦀-🇯🇵
 
-Rustlingsの日本語版サードパーティーへようこそ😃
+Rustlingsの**日本語版サードパーティー**へようこそ😃
 不備などございましたら、[こちら](https://github.com/sotanengel/rustlings-jp/issues)から連絡くださいませ。
 
 

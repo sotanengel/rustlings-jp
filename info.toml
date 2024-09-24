@@ -7,10 +7,10 @@
 format_version = 1
 
 # Optional multi-line message to be shown to users when just starting with the exercises.
-welcome_message = """Welcome to these third-party Rustlings exercises."""
+welcome_message = """Rustlings-jp(サードパーティー)へようこそ！ 一緒にRustについて学んでいきましょう！！！"""
 
 # Optional multi-line message to be shown to users after finishing all exercises.
-final_message = """We hope that you found the exercises helpful :D"""
+final_message = """お疲れ様でした！:D"""
 
 # Repeat this section for every exercise.
 [[exercises]]
