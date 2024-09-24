@@ -1,22 +1,20 @@
-// This is a quiz for the following sections:
+// これは以下のセクションのクイズです：
 // - Variables
 // - Functions
 // - If
 //
-// Mary is buying apples. The price of an apple is calculated as follows:
-// - An apple costs 2 rustbucks.
-// - However, if Mary buys more than 40 apples, the price of each apple in the
-// entire order is reduced to only 1 rustbuck!
+// メアリーはりんごを買っています。りんごの価格は以下のように計算されます：
+// - りんご1個は2 rustbucksかかります
+// - 40個より多くリンゴを買ったら、りんご1個の値段は2 rustbucksになります。
 
-// TODO: Write a function that calculates the price of an order of apples given
-// the quantity bought.
+// TODO: 与えられたりんごの注文数の金額を計算する関数を書いてください。
 // fn calculate_price_of_apples(???) -> ??? { ??? }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
-// Don't change the tests!
+// このテストは変更しないでください。
 #[cfg(test)]
 mod tests {
     use super::*;

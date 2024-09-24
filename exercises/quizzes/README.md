@@ -1,3 +1,3 @@
-# Quizzes
+# クイズ
 
-After every couple of sections, there will be a quiz in this directory that'll test your knowledge on a bunch of sections at once.
+すべてのセクションが終わった後に、あなたのRustの知識を一度にテストするクイズをこの章では配置しています。

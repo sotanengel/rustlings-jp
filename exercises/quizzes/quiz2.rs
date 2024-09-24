@@ -1,21 +1,19 @@
-// This is a quiz for the following sections:
+// これは以下のセクションのクイズです：
 // - Strings
 // - Vecs
 // - Move semantics
 // - Modules
 // - Enums
 //
-// Let's build a little machine in the form of a function. As input, we're going
-// to give a list of strings and commands. These commands determine what action
-// is going to be applied to the string. It can either be:
-// - Uppercase the string
-// - Trim the string
-// - Append "bar" to the string a specified amount of times
+// 関数形式の機械を作りましょう。この機械への入力は文字列とコマンドの組み合わせでベクターで渡します。
+// これらのコマンドは以下のような文字列への処理を決定するものです。
+// - 文字列を大文字にする
+// - 文字列をトリミングする
+// - 特定回数の"bar"を追加する
 //
-// The exact form of this will be:
-// - The input is going to be a Vector of 2-length tuples,
-//   the first element is the string, the second one is the command.
-// - The output element is going to be a vector of strings.
+// より詳細な仕様は以下です：
+// - 入力は要素数が2のタプルで最初の要素が変更を加える文字列で2つ目がコマンドです
+// - 出力は文字列のベクターです
 
 enum Command {
     Uppercase,
@@ -26,17 +24,17 @@ enum Command {
 mod my_module {
     use super::Command;
 
-    // TODO: Complete the function as described above.
+    // TODO: 関数を以下に完成させてください。
     // pub fn transformer(input: ???) -> ??? { ??? }
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
 mod tests {
-    // TODO: What do we need to import to have `transformer` in scope?
+    // TODO: `transformer`をスコープに入れるために何をすればいいですか？
     // use ???;
     use super::Command;
 
