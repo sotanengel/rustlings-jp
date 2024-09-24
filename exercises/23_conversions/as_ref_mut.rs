@@ -1,27 +1,27 @@
-// AsRef and AsMut allow for cheap reference-to-reference conversions. Read more
-// about them at https://doc.rust-lang.org/std/convert/trait.AsRef.html and
-// https://doc.rust-lang.org/std/convert/trait.AsMut.html, respectively.
+// AsRefとAsMutは参照と参照の変換を容易に行うことができる。
+// 詳細については https://doc.rust-lang.org/std/convert/trait.AsRef.html と
+// https://doc.rust-lang.org/std/convert/trait.AsMut.html を読みましょう。
 
-// Obtain the number of bytes (not characters) in the given argument.
-// TODO: Add the `AsRef` trait appropriately as a trait bound.
+// 引数からバイト数を取得しましょう。
+// TODO: トレイト境界として`AsRef`を追加しましょう。
 fn byte_counter<T>(arg: T) -> usize {
     arg.as_ref().as_bytes().len()
 }
 
-// Obtain the number of characters (not bytes) in the given argument.
-// TODO: Add the `AsRef` trait appropriately as a trait bound.
+// // 引数から文字数を取得しましょう。
+// TODO: トレイト境界として`AsRef`を追加しましょう。
 fn char_counter<T>(arg: T) -> usize {
     arg.as_ref().chars().count()
 }
 
-// Squares a number using `as_mut()`.
-// TODO: Add the appropriate trait bound.
+// `as_mut()`を使って数値を二乗しましょう。
+// TODO: 適切なトレイト境界を追加しましょう。
 fn num_sq<T>(arg: &mut T) {
-    // TODO: Implement the function body.
+    // TODO: 関数の内部を実装しましょう。
 }
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

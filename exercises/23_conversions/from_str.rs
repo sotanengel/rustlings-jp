@@ -1,8 +1,7 @@
-// This is similar to the previous `from_into` exercise. But this time, we'll
-// implement `FromStr` and return errors instead of falling back to a default
-// value. Additionally, upon implementing `FromStr`, you can use the `parse`
-// method on strings to generate an object of the implementor type. You can read
-// more about it in the documentation:
+// このエクササイズは以前の`from_into`に似ている。
+// しかし今回の場合は、`FromStr`を実装し、エラーを返却する代わりにデフォルトの値を返却する。
+// さらに`FromStr`の実装では`parse`メソッドを実装型のオブジェクトを生成するために使うことができる。
+// 以下のドキュメントで`FromStr`の詳細について読むことができます。
 // https://doc.rust-lang.org/std/str/trait.FromStr.html
 
 use std::num::ParseIntError;
@@ -14,30 +13,27 @@ struct Person {
     age: u8,
 }
 
-// We will use this error type for the `FromStr` implementation.
+// `FromStr`の実装としてこのエラー型を使うことができます。
 #[derive(Debug, PartialEq)]
 enum ParsePersonError {
-    // Incorrect number of fields
+    // フィールドが不正な数値のとき
     BadLen,
-    // Empty name field
+    // 名前フィールドが存在しないとき
     NoName,
-    // Wrapped error from parse::<u8>()
+    // parse::<u8>()がエラーのとき
     ParseInt(ParseIntError),
 }
 
-// TODO: Complete this `From` implementation to be able to parse a `Person`
-// out of a string in the form of "Mark,20".
-// Note that you'll need to parse the age component into a `u8` with something
-// like `"4".parse::<u8>()`.
+// TODO: "Mark,20"という形式の文字列から`Person`型にパースできるように以下の`From`実装を完成させてください。
+// `"4".parse::<u8>()`のように年齢要素は`u8`型にパースする必要があります。
 //
 // Steps:
-// 1. Split the given string on the commas present in it.
-// 2. If the split operation returns less or more than 2 elements, return the
-//    error `ParsePersonError::BadLen`.
-// 3. Use the first element from the split operation as the name.
-// 4. If the name is empty, return the error `ParsePersonError::NoName`.
-// 5. Parse the second element from the split operation into a `u8` as the age.
-// 6. If parsing the age fails, return the error `ParsePersonError::ParseInt`.
+// 1. 文字列をカンマで分割してください。
+// 2. 分割処理の結果として2個以上(もしくは以下)だった場合は、`ParsePersonError::BadLen`エラーを返してください。
+// 3. 分割した要素のうち、最初の要素は名前として使ってください。
+// 4. 名前の部分が空白だった場合には、`ParsePersonError::NoName`エラーを返してください。
+// 5. ２つ目の要素は年齢として`u8`型にしてください。
+// 6. もしも年齢のパースに失敗した場合には、`ParsePersonError::ParseInt`エラーを返してください。
 impl FromStr for Person {
     type Err = ParsePersonError;
 
