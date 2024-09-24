@@ -4,7 +4,6 @@
 // このカウントをする機能をイテレータを使うことで再作成しましょう。
 // forやwhileを使うことなく実装してみましょう。
 
-
 use std::collections::HashMap;
 
 #[derive(Clone, Copy, PartialEq, Eq)]
@@ -39,7 +38,7 @@ fn count_collection_for(collection: &[HashMap<String, Progress>], value: Progres
 }
 
 fn count_collection_iterator(collection: &[HashMap<String, Progress>], value: Progress) -> usize {
-     // `collection` はスライスのハッシュマップです。
+    // `collection` はスライスのハッシュマップです。
     // collection = [{ "variables1": Complete, "from_str": None, … },
     //               { "variables2": Complete, … }, … ]
     collection

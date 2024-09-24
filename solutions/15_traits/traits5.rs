@@ -1,13 +1,13 @@
 trait SomeTrait {
-  fn some_function(&self) -> bool {
-      true
-  }
+    fn some_function(&self) -> bool {
+        true
+    }
 }
 
 trait OtherTrait {
-  fn other_function(&self) -> bool {
-      true
-  }
+    fn other_function(&self) -> bool {
+        true
+    }
 }
 
 struct SomeStruct;
@@ -19,21 +19,21 @@ impl SomeTrait for OtherStruct {}
 impl OtherTrait for OtherStruct {}
 
 fn some_func(item: impl SomeTrait + OtherTrait) -> bool {
-  //             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  item.some_function() && item.other_function()
+    //             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    item.some_function() && item.other_function()
 }
 
 fn main() {
-  // この行で関数のテストができます。
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
 mod tests {
-  use super::*;
+    use super::*;
 
-  #[test]
-  fn test_some_func() {
-      assert!(some_func(SomeStruct));
-      assert!(some_func(OtherStruct));
-  }
+    #[test]
+    fn test_some_func() {
+        assert!(some_func(SomeStruct));
+        assert!(some_func(OtherStruct));
+    }
 }

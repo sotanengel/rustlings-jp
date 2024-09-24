@@ -47,7 +47,7 @@ fn main() {
     let p1 = Person::from("Mark,20");
     println!("{p1:?}");
 
-   // `From`が`Person`で実装されたので、`Into`を使うことができます。
+    // `From`が`Person`で実装されたので、`Into`を使うことができます。
     let p2: Person = "Gerald,70".into();
     println!("{p2:?}");
 }

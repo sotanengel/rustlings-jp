@@ -76,7 +76,7 @@ fn main() {
     //`try_from`関数を使ってください。
     let c3 = Color::try_from(&v[..]);
     println!("{c3:?}");
-     // もしくは`try_into`を使って、ブラケット内にスライスを配置してください。
+    // もしくは`try_into`を使って、ブラケット内にスライスを配置してください。
     let c4: Result<Color, _> = (&v[..]).try_into();
     println!("{c4:?}");
 }

@@ -16,12 +16,12 @@ struct Person {
 // `FromStr`の実装としてこのエラー型を使うことができます。
 #[derive(Debug, PartialEq)]
 enum ParsePersonError {
-  // フィールドが不正な数値のとき
-  BadLen,
-  // 名前フィールドが存在しないとき
-  NoName,
-  // parse::<u8>()がエラーのとき
-  ParseInt(ParseIntError),
+    // フィールドが不正な数値のとき
+    BadLen,
+    // 名前フィールドが存在しないとき
+    NoName,
+    // parse::<u8>()がエラーのとき
+    ParseInt(ParseIntError),
 }
 
 impl FromStr for Person {

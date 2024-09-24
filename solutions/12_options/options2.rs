@@ -1,37 +1,37 @@
 fn main() {
-  // この行で関数のテストができます。
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]
 mod tests {
-  #[test]
-  fn simple_option() {
-      let target = "rustlings";
-      let optional_target = Some(target);
+    #[test]
+    fn simple_option() {
+        let target = "rustlings";
+        let optional_target = Some(target);
 
-      // if-let
-      if let Some(word) = optional_target {
-          assert_eq!(word, target);
-      }
-  }
+        // if-let
+        if let Some(word) = optional_target {
+            assert_eq!(word, target);
+        }
+    }
 
-  #[test]
-  fn layered_option() {
-      let range = 10;
-      let mut optional_integers: Vec<Option<i8>> = vec![None];
+    #[test]
+    fn layered_option() {
+        let range = 10;
+        let mut optional_integers: Vec<Option<i8>> = vec![None];
 
-      for i in 1..=range {
-          optional_integers.push(Some(i));
-      }
+        for i in 1..=range {
+            optional_integers.push(Some(i));
+        }
 
-      let mut cursor = range;
+        let mut cursor = range;
 
-      // `while-let` による入れ子のパターンマッチングです。
-      while let Some(Some(integer)) = optional_integers.pop() {
-          assert_eq!(integer, cursor);
-          cursor -= 1;
-      }
+        // `while-let` による入れ子のパターンマッチングです。
+        while let Some(Some(integer)) = optional_integers.pop() {
+            assert_eq!(integer, cursor);
+            cursor -= 1;
+        }
 
-      assert_eq!(cursor, 0);
-  }
+        assert_eq!(cursor, 0);
+    }
 }

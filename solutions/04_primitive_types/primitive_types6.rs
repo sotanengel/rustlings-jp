@@ -4,13 +4,13 @@ fn main() {
 
 #[cfg(test)]
 mod tests {
-  #[test]
-  fn indexing_tuple() {
-      let numbers = (1, 2, 3);
+    #[test]
+    fn indexing_tuple() {
+        let numbers = (1, 2, 3);
 
-      // タプルのインデックスを使ったアクセスは以下のように書きます。
-      let second = numbers.1;
+        // タプルのインデックスを使ったアクセスは以下のように書きます。
+        let second = numbers.1;
 
-      assert_eq!(second, 2, "This is not the 2nd number in the tuple!");
-  }
+        assert_eq!(second, 2, "This is not the 2nd number in the tuple!");
+    }
 }
