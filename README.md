@@ -42,7 +42,7 @@ cargo install rustlings
 最新バージョンの日本語の演習問題をダウンロードしましょう！
 ダウンロードしたzipファイルを解凍し、好きな場所に配置してください。
 
-[ダウンロード](https://github.com/sotanengel/rustlings-jp)
+[ダウンロード](https://github.com/sotanengel/rustlings-jp/tree/20240829)
 
 ## 4. 演習問題にチャレンジ！
 ターミナル上で解凍した`rustlings-jp-YYYYMMDD`のディレクトリに移動し、以下のコマンドを実行してください。
