@@ -2,7 +2,7 @@
 
 #[allow(dead_code)]
 mod delicious_snacks {
-    // 以下の`use`構文を修正後に追加してください。
+    // TODO: 以下の`use`構文を修正後に追加してください。
     // use self::fruits::PEAR as ???;
     // use self::veggies::CUCUMBER as ???;
 
