@@ -56,7 +56,7 @@ rustlings
 <details>
 <summary><strong>もしも「<code>rustlings</code>コマンドが見つからない」とターミナル上で警告が出た場合には…</strong> (<em>詳細を開く</em>)</summary>
 
-You are probably using Linux and installed Rust using your package manager.
+
 もしもLinux系を使っており、Rustをパッケージマネージャーでインストールしていた場合には、
 Cargoが`~/.cargo/bin`にダウンロードされているものの、
  `~/.cargo/bin`が`PATH`の環境変数に入っていない可能性があります。
