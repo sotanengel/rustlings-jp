@@ -1,4 +1,4 @@
-# Exercise to Book Chapter mapping
+# エクササイズとRust本の章の対応表
 
 | Exercise               | Book Chapter        |
 | ---------------------- | ------------------- |

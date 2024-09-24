@@ -1,6 +1,6 @@
 #[allow(dead_code)]
 mod delicious_snacks {
-    // Added `pub` and used the expected alias after `as`.
+    // `pub`を追記し、`as`の後にエイリアスを使いました。
     pub use self::fruits::PEAR as fruit;
     pub use self::veggies::CUCUMBER as veggie;
 

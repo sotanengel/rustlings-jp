@@ -18,7 +18,7 @@ impl Licensed for SomeSoftware {}
 impl Licensed for OtherSoftware {}
 
 fn main() {
-    // You can optionally experiment here.
+    // この行で関数のテストができます。
 }
 
 #[cfg(test)]

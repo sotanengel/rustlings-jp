@@ -1,6 +1,5 @@
 # モジュール
 
-In this section we'll give you an introduction to Rust's module system.
 この章ではRustのモジュールシステムについて説明します。
 
 補足情報

@@ -1,5 +1,3 @@
-// You can use the `use` keyword to bring module paths from modules from
-// anywhere and especially from the standard library into your scope.
 // `use`キーワードは標準のライブラリのモジュールなど、どこにあるモジュールでもスコープに入れることができます。
 
 // TODO: `SystemTime`や`UNIX_EPOCH`を`std::time`モジュールからスコープに追加してください。

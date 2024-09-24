@@ -43,11 +43,11 @@ impl From<&str> for Person {
 }
 
 fn main() {
-    // Use the `from` function.
+    // `from`を使ってください。
     let p1 = Person::from("Mark,20");
     println!("{p1:?}");
 
-    // Since `From` is implemented for Person, we are able to use `Into`.
+   // `From`が`Person`で実装されたので、`Into`を使うことができます。
     let p2: Person = "Gerald,70".into();
     println!("{p2:?}");
 }

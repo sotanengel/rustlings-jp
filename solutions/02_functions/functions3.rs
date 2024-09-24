@@ -5,6 +5,6 @@ fn call_me(num: u8) {
 }
 
 fn main() {
-    // `call_me` expects an argument.
+    // `call_me`は引数の型を推測します。
     call_me(5);
 }

@@ -8,7 +8,7 @@ fn array_and_vec() -> ([i32; 4], Vec<i32>) {
 }
 
 fn main() {
-  // You can optionally experiment here.
+  // この行で関数のテストができます。
 }
 
 #[cfg(test)]

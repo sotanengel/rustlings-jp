@@ -24,7 +24,7 @@ The traits are the following:
 
 # 補足情報
 
-These are not directly covered in the book, but the standard library has a great documentation for it.
+型の変換に関しては直接本で対応しているところはないが、Rustのドキュメントが詳しい説明を載せている。
 
 - [conversions](https://doc.rust-lang.org/std/convert/index.html)
 - [`FromStr` trait](https://doc.rust-lang.org/std/str/trait.FromStr.html)
