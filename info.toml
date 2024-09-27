@@ -18,7 +18,7 @@ final_message = """お疲れ様でした！:D"""
 name = "intro1"
 dir = "00_intro"
 test = false
-hint = """???"""
+hint = """`n`を入力すると次の練習に進みます。\n もしも次の問題に進めないときは`n`を入力した後にENTERを押す必要があるかもしれません。"""
 skip_check_unsolved = true
 
 [[exercises]]
@@ -26,229 +26,229 @@ skip_check_unsolved = true
 name = "intro2"
 dir = "00_intro"
 test = false
-hint = """???"""
+hint = """コンパイラーは、printマクロの名前が間違っていることを知らせています。\nまた、代替案もターミナル上で示しています。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "variables1"
 dir = "01_variables"
 test = false
-hint = """???"""
+hint = """Rustで`main`関数内での宣言において、新しい変数に値を紐付けするために必要なキーワードが欠けていいます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "variables2"
 dir = "01_variables"
 test = false
-hint = """???"""
+hint = """コンパイラのメッセージは、Rustは変数`x`が持つ型をコードから推測することはできないと言っています。\n`main`関数の最初の行に型アノテーションを付けるとどうなるでしょうか？\n`x` に値を与えたら？\nもし両方やったらどうなるでしょうか？\nまた`x` はどんな型であるべきか？\n`x` が `10` と同じ型だったら？違う型だったら？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "variables3"
 dir = "01_variables"
 test = false
-hint = """???"""
+hint = """このエクササイズでは`main`関数で作成した変数を使おうとしていますが、その変数に値を与えていません。\nこのようなエラーはプログラミング言語でよく起こるものです(ありがたいことに、Rustコンパイラーはこのエラーを発見してくれました！)。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "variables4"
 dir = "01_variables"
 test = false
-hint = """???"""
+hint = """Rustでは変数はデフォルトでイミュータブル(不変)です。\nしかしこのエクササイズでは別の値を代入しようとしています。\n変数をミュータブル(可変)にするキーワードを挿入しましょう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "variables5"
 dir = "01_variables"
 test = false
-hint = """???"""
+hint = """variables4では特別なキーワードを使って、変数の可変/不変を変更する方法を学びました。\nただこのエクササイズではそれは役に立ちません。\nなぜなら今回は既存の変数名に異なる型を代入したいからです。また同じ変数名を再利用したい場合もあるでしょう(変数の中身の型をちょっと変更するだけなど)。\nこのような状況に対応するためにRustには「シャドーイング」という方法があります。\nシャドーイングはRust本の以下のページに詳しく書かれています。\nhttps://doc.rust-jp.rs/book-ja/ch03-01-variables-and-mutability.html#%E3%82%B7%E3%83%A3%E3%83%89%E3%83%BC%E3%82%A4%E3%83%B3%E3%82%B0 \nこの手法を使ってエクササイズを解いてみてください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "variables6"
 dir = "01_variables"
 test = false
-hint = """???"""
+hint = """ここまで変数や可変/不変について知りましたが、定数という重要な型が存在します。\n定数は常に不変で「const」を使って宣言します。\n定数の型は常にコード内で明確に宣言する必要があります。\n変数と定数の違いについてはRust本の以下のページに詳しく書かれています。\nhttps://doc.rust-jp.rs/book-ja/ch03-01-variables-and-mutability.html#%E5%A4%89%E6%95%B0%E3%81%A8%E5%AE%9A%E6%95%B0constants%E3%81%AE%E9%81%95%E3%81%84"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "functions1"
 dir = "02_functions"
 test = false
-hint = """???"""
+hint = """main関数内でcall_me関数を呼び出しているが、その関数がコード中に存在していません。\nまたこの関数が引数を求めず、返り値を持たないとコードは推測しています。\nmain関数とよく似ていますね。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "functions2"
 dir = "02_functions"
 test = false
-hint = """???"""
+hint = """Rustでは関数のシグネチャ(入出力を記載する部分)で型の宣言が必要です。\ncall_me関数にはnum変数の型の宣言がないですね。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "functions3"
 dir = "02_functions"
 test = false
-hint = """???"""
+hint = """関数の宣言自体には問題がありませんが、関数の呼び出し方に問題があるようです。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "functions4"
 dir = "02_functions"
 test = false
-hint = """???"""
+hint = """エラーメッセージはsale_price関数の「->」以降に返り値の型の記載がないと指摘しています。例としてis_even関数を見てみましょう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "functions5"
 dir = "02_functions"
 test = false
-hint = """???"""
+hint = """これはRustでよくあるエラーで1文字削除するだけで直ります。\nこれはRustが式と文を区別しているために起こります。\n式はオペラントに応じた値を返し、文は単に「()」を返します。square関数はi32を返すはずだが、()を返してしまっています。\n解決方法は２つあります。\n1. returnキーワードを追加する\n2. セミコロンを削除する"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "if1"
 dir = "03_if"
-hint = """???"""
+hint = """一行で行いたい処理を実装することも可能です。\n\n他の言語で言うと\n・C++ならa > b ? a : b\nPythonならa if a > b else b\nRustにおいて覚えておくべきことは、\n・if文の条件は丸括弧などで囲む必要はないこと\n・if/elseは式であること\n・条件式の後には{}ブロックが続くこと"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "if2"
 dir = "03_if"
-hint = """???"""
+hint = """最初のコンパイルエラーについては「Rustでは各条件ブロックで同じ型を返すことが重要である」という点に配慮してコードを修正してください。\nテストを合格させるには異なる入力値をチェックする条件が必要です。テストで何を期待しているかについてはテストを読んでください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "if3"
 dir = "03_if"
-hint = """???"""
+hint = """Rustではifの全てのアームが同じ型の値を返す必要があります。\n全てのアームが同じ型で一貫していることを確認してください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "quiz1"
 dir = "quizzes"
-hint = """???"""
+hint = """今回はヒントなしです ;)"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types1"
 dir = "04_primitive_types"
 test = false
-hint = """???"""
+hint = """Rustでは演算子「!」をブール値の前に置くことでブール値を否定することができます。\n例: `!true == false`これはブーリアン型の変数でも使えます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types2"
 dir = "04_primitive_types"
 test = false
-hint = """???"""
+hint = """今回はヒントなしです ;)"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types3"
 dir = "04_primitive_types"
 test = false
-hint = """???"""
+hint = """Rustでは配列型一定のサイズで初期化する省略記法があります。\n例えば\n\n```let array = [「Are we there yet?」; 10]；```\n\nボーナス問題：以下の式がtrueを返すようなものは他に何がありますか？\nfor `a.len() >= 100`"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types4"
 dir = "04_primitive_types"
-hint = """???"""
+hint = """スライスについてはRust本の以下のページに詳しく書かれています。\nhttps://doc.rust-jp.rs/book-ja/ch04-03-slices.html \nスライスではスライスに入れたい配列の要素の開始・終了(+1)のインデックスを使います。\n「assert_eq!」の第一引数に「&」がないのはなぜでしょうか？それは第二引数が参照型だからです。\nhttps://doc.rust-lang.org/nomicon/coercions.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types5"
 dir = "04_primitive_types"
 test = false
-hint = """???"""
+hint = """タプルについてはRust本の以下のページに詳しく書かれています。\nhttps://doc.rust-jp.rs/book-ja/ch03-02-data-types.html#%E3%82%BF%E3%83%97%E3%83%AB%E5%9E%8B \n今回のエクササイズではnameとageの変数をタプルの適切な箇所にバインドする必要があります。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types6"
 dir = "04_primitive_types"
-hint = """???"""
+hint = """このエクササイズではタプルの要素を分解することもできるが、Rust本の例で説明があるようにタプルのインデックスを使ってみよう。\nこれでコードの表現の幅が広がるはずだ。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "vecs1"
 dir = "05_vecs"
-hint = """???"""
+hint = """Rustではベクター型を定義する方法が２つある。\n1. 「Vec::new()」関数を使って新しいベクトルを作り、「push」メソッドでベクトルに追加する\n2. 「vec![]」マクロを使い要素を最初に定義し、初期化する(初期値を知っている場合はこっちを使った方が簡単)\n詳しくはRustの以下のページを参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-01-vectors.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "vecs2"
 dir = "05_vecs"
-hint = """???"""
+hint = """最初の関数では空のベクトルを作成し、新しい要素をプッシュしています。\n二つ目の関数では入力の値をmapして、ベクトルに集約しています。\n両方の関数を書いてみて、どちらのアプローチが好みか確かめてみてください。\nちなみにRust開発者で一般的に使われているパターンはどちらでしょうか？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics1"
 dir = "06_move_semantics"
-hint = """???"""
+hint = """このエクササイズではベクターに要素をプッシュしている行で「vecは可変として宣言していないので、そのように借用することができません」というエラーが出ています。\nこれを修正するためにキーワードを追加する必要があるのですが、エラー行ではない部分を修正してください。\nfill_vecを実行した後にvec[0]にアクセスしてみてください。どうなっているでしょうか？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics2"
 dir = "06_move_semantics"
-hint = """???"""
+hint = """このエクササイズを最初に実行するとき「移動した値の借用」と言うエラーがあることに気がつきましたか？\nRustでは引数が関数に渡され、その値が明示的に返却されない場合に元の変数は利用できなくなります。\nつまりfill_vecにvec0を渡すとvec1に所有権が移動するため、vec0にはアクセスできなくなります。\nもしもこの問題を解決したい場合には、vec0のクローンを作成して、fill_vecに渡す必要がある。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics3"
 dir = "06_move_semantics"
-hint = """???"""
+hint = """今までのエクササイズとの差分はfill_vecの関数の最初にあった「let mut vec = vec」がなくなったことだ。\nその代わりに既存の配列の初期定義時にmutを追加しましょう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics4"
 dir = "06_move_semantics"
-hint = """???"""
+hint = """可変な参照のスコープの範囲を慎重に考えましょう。\n可変参照を取得したとにxの値を更新することは何かの役に立つでしょうか？\n可変変数の参照についてはRust本の以下のページを参考にしてください。\nhttps://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics5"
 dir = "06_move_semantics"
 test = false
-hint = """???"""
+hint = """このエクササイズの解答を見つけるにはRust本の以下を読んでください。\nhttps://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html \nこのコードの最初の問題点は、get_charが文字列の所有権をとっていることです。\nそのためdataの所有権が移動してしまい、string_uppercaseを実行することができない。\nこのエラーを修正した後はstring_uppercaseの関数のシグネチャも修正する必要があります。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "structs1"
 dir = "07_structs"
-hint = """???"""
+hint = """Rustには3種類の構造体があり、どの構造体も関連するデータをまとめてパッケージ化するために使われます。\n通常の構造体は「データ」と「そのデータに対する名前」が格納されており、それらをフィールドと呼びます。\nタプル構造体は名前付きのタプルと言うだけで、各フィールドに固有の名前はついていません。\nユニット様構造体はフィールドを持っておらず、ジェネリティクスとして利用すると便利です。\nこのエクササイズでは全ての構造体を実装する必要があり、Rust本の以下のページを参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "structs2"
 dir = "07_structs"
-hint = """???"""
+hint = """構造体のインスタンスを作成するのは簡単で、各フィールドに値を代入するだけで良い。またインスタンス化を行う際に使えるいくつかのショートカットもあるので、Rust本をご確認ください。\nhttps://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html#%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E3%81%A8%E5%A4%89%E6%95%B0%E3%81%8C%E5%90%8C%E5%90%8D%E3%81%AE%E6%99%82%E3%81%AB%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E5%88%9D%E6%9C%9F%E5%8C%96%E7%9C%81%E7%95%A5%E8%A8%98%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%86"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "structs3"
 dir = "07_structs"
-hint = """???"""
+hint = """is_internationalメソッドにおいて、どの情報を確認すれば国際便であると言えるでしょうか？\n経由地が関係してそうですね。\n\nget_feesにおいて、追加の引数が必要ですがPakecge構造体の中に関連するフィールドはありますか？\n\nメソッドの実装について詳しく知りたい場合にはRust本の以下を確認してください。\nhttps://doc.rust-jp.rs/book-ja/ch05-03-method-syntax.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "enums1"
 dir = "08_enums"
 test = false
-hint = """???"""
+hint = """今回はヒントなしです;)"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "enums2"
 dir = "08_enums"
 test = false
-hint = """???"""
+hint = """enumsを定義すると様々な型を含む列挙を作成することができます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "enums3"
 dir = "08_enums"
-hint = """???"""
+hint = """最初のステップとして、エラーが出ないように列挙型を定義しましょう。\n次にmatchをprocess()で作成しましょう。\n列挙の中の値を得るためにはmatchを使って、分解する必要があることに注意してください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
