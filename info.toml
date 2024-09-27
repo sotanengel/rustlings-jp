@@ -255,178 +255,178 @@ hint = """最初のステップとして、エラーが出ないように列挙�
 name = "strings1"
 dir = "09_strings"
 test = false
-hint = """???"""
+hint = """current_favorite_color関数はstaticライフタイムのスライスを返している。\n文字列のデータはコードに埋め込まれているため、コードが実行されている限りは保持されます。\nただし文字列のスライスはString型とは異なるため、Rust本やFromの特性を用いることで型の変換を行うことができます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "strings2"
 dir = "09_strings"
 test = false
-hint = """???"""
+hint = """word変数に紐付けされている値を文字列のスライス型に変更することでエラーを解消することができます。\nしかしif文に1文字追加することでString型を文字列スライスに強制することができます。\n\n余談：このような変換に興味がある方はRust本のスマートポインタの章を読んでみてください\nhttps://doc.rust-jp.rs/book-ja/ch15-02-deref.html#%E9%96%A2%E6%95%B0%E3%82%84%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%A7%E6%9A%97%E9%BB%99%E7%9A%84%E3%81%AA%E5%8F%82%E7%85%A7%E5%A4%96%E3%81%97%E5%9E%8B%E5%BC%B7%E5%88%B6"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "strings3"
 dir = "09_strings"
-hint = """???"""
+hint = """文字列の標準ライブラリには便利なものがいくつかあるので使ってみよう。\nhttps://doc.rust-lang.org/std/string/struct.String.html#method.trim \ncompose_me：format!マクロを使ったり、文字列のスライスを所有権のある文字列に変換したり、自由に拡張することができる\n replace_meについてはreplaceメソッドを参照してください\nhttps://doc.rust-lang.org/std/string/struct.String.html#method.replace"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "strings4"
 dir = "09_strings"
 test = false
-hint = """???"""
+hint = """main関数のplaceholderをstringかstring_slice関数に置き換えてください。\n例えばplaceholder("blue");はstring_slice("blue");に置き換えるべきです。\nなぜならblueの部分は&str型だからです。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "modules1"
 dir = "10_modules"
 test = false
-hint = """???"""
+hint = """Rustではでデフォルトほとんどのものがプライベートアクセスになっています。\nしかしpublicで使えるようにするために使えるキーワードが用意されています。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "modules2"
 dir = "10_modules"
 test = false
-hint = """???"""
+hint = """delicious_snacksモジュールは内部構造(fruitsやveggiesモジュールと関連する定数)とは異なる外部インターフェースを提供しようとしている。\nuseを使って両方の定数に欠けているキーワードを探しましょう。\n詳しくはRust本の以下を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch07-04-bringing-paths-into-scope-with-the-use-keyword.html#pub-use%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E5%90%8D%E5%89%8D%E3%82%92%E5%86%8D%E5%85%AC%E9%96%8B%E3%81%99%E3%82%8B"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "modules3"
 dir = "10_modules"
 test = false
-hint = """???"""
+hint = """UNIX_EPOCHとSystemTimeはstd::timeモジュールで宣言されています。\nこの2つをスコープに入れるためにuseをコードに追加しましょう。\nネストを使えば1行でこの2つをスコープに入れることができます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "hashmaps1"
 dir = "11_hashmaps"
-hint = """???"""
+hint = """果物の数は最低でも5つで、少なくとも3種類の果物を入れなければなりません。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "hashmaps2"
 dir = "11_hashmaps"
-hint = """???"""
+hint = """ハッシュマップのentryメソッドやor_insertメソッドを使いましょう。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html#%E3%82%AD%E3%83%BC%E3%81%AB%E5%80%A4%E3%81%8C%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E6%99%82%E3%81%AE%E3%81%BF%E5%80%A4%E3%82%92%E6%8C%BF%E5%85%A5%E3%81%99%E3%82%8B"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "hashmaps3"
 dir = "11_hashmaps"
-hint = """???"""
+hint = """ヒント１：ハッシュマップのentryとor_insert(もしくはor_insert_with)メソッドを使用して、テーブルにチームが存在しない場合にTeamScoresのデフォルト値を挿入してください。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html#%E3%82%AD%E3%83%BC%E3%81%AB%E5%80%A4%E3%81%8C%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E6%99%82%E3%81%AE%E3%81%BF%E5%80%A4%E3%82%92%E6%8C%BF%E5%85%A5%E3%81%99%E3%82%8B \nヒント２：与えられたキーのエントリが既に存在する場合に既存で設定される値に基づいて更新することができるようにしましょう。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html#%E5%8F%A4%E3%81%84%E5%80%A4%E3%81%AB%E5%9F%BA%E3%81%A5%E3%81%84%E3%81%A6%E5%80%A4%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "quiz2"
 dir = "quizzes"
-hint = """???"""
+hint = """演算子+はStringと&strを連結することができる。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "options1"
 dir = "12_options"
-hint = """???"""
+hint = """オプション型はSome値とその内部の値、そして内部値のNone型を持つことができきます。\n内部値を取得する方法は複数あり、unwrapやパターンマッチを使うことができます。\nunwrapを使うのは簡単ですが、問題があった場合に場合にパニックを引き起こすため、プログラムが強制終了しないためにはどうすればいいでしょうか？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "options2"
 dir = "12_options"
-hint = """???"""
+hint = """以下の例を参考にしてみてください。\n・https://doc.rust-jp.rs/rust-by-example-ja/flow_control/if_let.html \n・https://doc.rust-jp.rs/rust-by-example-ja/flow_control/while_let.html \nオプション型はif letやwhile let文の中に入れ子にできることを覚えておいてください。\n例えば「if let Some(Some(x)) = y」のように。Option::flattenについても参照してみてください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "options3"
 dir = "12_options"
 test = false
-hint = """???"""
+hint = """コンパイラーは部分的な所有権の移動が起きたと言っていますが、これはどうすれば避けられるでしょうか？\nコンパイラーの解決策をみてみましょう。\nコンパイラーの指示通りに修正したら、関連するドキュメントを読んでみてください。\nhttps://doc.rust-lang.org/std/keyword.ref.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors1"
 dir = "13_error_handling"
-hint = """???"""
+hint = """generate_nametag_textはオプション型ではなく、OkやErr型を持つResultを返すべきです。\nこの変更を行うためには以下が必要です。\n・関数のシグネチャの返り値をResult<String, String>とする\n・Some()を返している関数の本体をOk()を返すように変更する\n・Noneを返しているところをErr(エラーメッセージ)を返すように変更する"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors2"
 dir = "13_error_handling"
-hint = """???"""
+hint = """これを処理する方法には、item_quantityでmatch文を使う方法があります。またその他の方法として、?演算子を使っても同じようなことができます。詳しくはRust本の以下を確認してください。\nhttps://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html#%E3%82%A8%E3%83%A9%E3%83%BC%E5%A7%94%E8%AD%B2%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-%E6%BC%94%E7%AE%97%E5%AD%90"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors3"
 dir = "13_error_handling"
 test = false
-hint = """???"""
+hint = """他の関数がResult型を返すことができるのであれば、なぜmainだけ返せないのでしょうか？\n実はmainがResult<(), ErrorType>を返すのは一般的な慣習です。\nOkの中に()が入っているのは、問題のない結果の場合特に何も必要がないからです。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors4"
 dir = "13_error_handling"
-hint = """???"""
+hint = """PositiveNonzeroInteger::newは常に新しいインスタンスを生成して値を返します。\nただしインスタンス作成時にチェックに失敗した倍にはErrを返します(問題がない場合はOkを返す)。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors5"
 dir = "13_error_handling"
 test = false
-hint = """???"""
+hint = """main関数内では2つの異なるResult型が生成され、それらは?を使って情報を伝達する。\nその両方を許容するmain関数の返り値の型はどのように制限すればいいだろうか？\n?演算子の処理の裏側ではエラー値に対してFrom::fromを呼び出して、ボックス化されたトレイトオブジェクトであるBox<dyn Error>に変換しています。\n全てのエラーはErrorトレイトに実装しているので、1つのBoxオブジェクトに様々なエラーを含めることができます。\nRust本のこのセクションを参考にしてください。\nhttps://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html#%E3%82%A8%E3%83%A9%E3%83%BC%E6%99%82%E3%81%AB%E3%83%91%E3%83%8B%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-unwrap%E3%81%A8expect \nエラーのボックス化については以下を参照してください。\nhttps://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html \nボックス化されたエラーで?演算子を使う方法について読む\nhttps://doc.rust-jp.rs/rust-by-example-ja/error/multiple_error_types/boxing_errors.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors6"
 dir = "13_error_handling"
-hint = """???"""
+hint = """このエクササイズでは前のエクササイズで利用したPositiveNonzeroIntegerを使用します。\nTODOが変更を求めている行の下にmapp_errメソッドをResultで利用して、あるタイプのエラーを他のタイプのエラーに変換する例があります。\n同じことをparseのResultで試してみてください。\n?演算子を使えばreturnの箇所を早めることができます。\nmapp_errに関してはstd::resultを参照してください。\nhttps://doc.rust-lang.org/std/result/enum.Result.html#method.map_err"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "generics1"
 dir = "14_generics"
 test = false
-hint = """???"""
+hint = """Rustのベクトル型ではジェネリティクスを利用して任意の型の動的なサイズの配列を作成することができます。もしもnumbersというベクトルがVec<T>であればTの型でしかプッシュできない。プッシュする前にintoを使うことでコンパイラにn1とn2をTに変換してもらうことができる。しかしコンパイラーはTの型を知らないので型に対してのアノテーションが必要になります。u8やi8型はi16やi32、i64に変換できます。ベクターのジェネリックを選択しましょう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "generics2"
 dir = "14_generics"
-hint = """???"""
+hint = """Rust本では以下が関連しています。\nhttps://doc.rust-jp.rs/book-ja/ch10-01-syntax.html#%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E5%AE%9A%E7%BE%A9%E3%81%A7%E3%81%AF"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits1"
 dir = "15_traits"
-hint = """???"""
+hint = """トレイトの特性についてはRust本を参照してください\nhttps://doc.rust-jp.rs/book-ja/ch10-02-traits.html \n演算子+はStringと&strを連結することができます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits2"
 dir = "15_traits"
-hint = """???"""
+hint = """トレイトがselfの所有権をとって、Selfを返り値にしていることに注目してください。\nトレイトのappend_barのシグネチャはselfを引数として取りますが、実装では代わりにmut selfを取ることができます。\nこれは値がどちらにせよ所有されているから可能なことです。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits3"
 dir = "15_traits"
-hint = """???"""
+hint = """トレイトは関数のデフォルトの実装を保有することができます。\nその関数を実装していないデータ型はデフォルトの関数を実装することができます。\nRust本での該当セクション\nhttps://doc.rust-jp.rs/book-ja/ch10-02-traits.html#%E3%83%87%E3%83%95%E3%82%A9%E3%83%AB%E3%83%88%E5%AE%9F%E8%A3%85"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits4"
 dir = "15_traits"
-hint = """???"""
+hint = """具体的な型のパラメータを使う代わりにトレイトを使用することができます。\n???をimpl [ここに何を入れる？]に置き換えてみてください。\nRust本での該当セクション\nhttps://doc.rust-jp.rs/book-ja/ch10-02-traits.html#%E5%BC%95%E6%95%B0%E3%81%A8%E3%81%97%E3%81%A6%E3%81%AE%E3%83%88%E3%83%AC%E3%82%A4%E3%83%88"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "traits5"
 dir = "15_traits"
-hint = """???"""
+hint = """引数が複数の特性を実装していることを確認するには+構文を使用します。\n???をimpl [ここに何を入れる？]+[ここに何を入れる？]に置き換えてみてください。\nRust本での該当セクション\nhttps://doc.rust-jp.rs/book-ja/ch10-02-traits.html#%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%88%E3%83%AC%E3%82%A4%E3%83%88%E5%A2%83%E7%95%8C%E3%82%92%E6%A7%8B%E6%96%87%E3%81%A7%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "quiz3"
 dir = "quizzes"
-hint = """???"""
+hint = """このエクササイズを解くためには、トレイトの知識、特にトレイト境界構文の知識が必要不可欠です。\nhttps://doc.rust-jp.rs/book-ja/ch10-02-traits.html#%E8%A4%87%E6%95%B0%E3%81%AE%E3%83%88%E3%83%AC%E3%82%A4%E3%83%88%E5%A2%83%E7%95%8C%E3%82%92%E6%A7%8B%E6%96%87%E3%81%A7%E6%8C%87%E5%AE%9A%E3%81%99%E3%82%8B \n以下は実装ブロックにトレイト境界を指定する方法です。\nimpl<T: Trait1 + Trait2 + …> for Foo<T> { … }\n use std::fmt::Display;が必要かもしれません。 """
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
