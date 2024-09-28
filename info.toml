@@ -432,156 +432,156 @@ hint = """このエクササイズを解くためには、トレイトの知識�
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "lifetimes1"
 dir = "16_lifetimes"
-hint = """???"""
+hint = """コンパイラーの指示に従ってください。もしも必要であればRust本も確認してみてください。\nhttps://doc.rust-jp.rs/book-ja/ch10-03-lifetime-syntax.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "lifetimes2"
 dir = "16_lifetimes"
 test = false
-hint = """???"""
+hint = """ライフタイム`aはxとyのうち、小さい方のライフタイムに等しい具体的なライフタイムを取得するということを覚えておいてください。\n内部ブロックを保持したまま望ましい結果を得るためには２つの方法があります。\n1. string2の宣言を移動して、string1と同じ長さにする(resultはどのように宣言されているだろうか？)\n2.println!を内部ブロックに移動する"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "lifetimes3"
 dir = "16_lifetimes"
 test = false
-hint = """???"""
+hint = """コンパイラーのガイドに従ってください:)"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "tests1"
 dir = "17_tests"
-hint = """???"""
+hint = """assert!は引数を必要とするマクロです。\n引数の値によって何もしない(テスト合格)かパニック(テスト失敗)します。\nそのためassert!に色んな値を入れて何が成功して失敗するかみてみましょう:)。\nもしもfalseをテストしたい場合にはassert!(!/...)のように!を入れることでテストすることができます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "tests2"
 dir = "17_tests"
-hint = """???"""
+hint = """assert_eq!は２つの引数を受け取って比較をするマクロです。\n同じ値を与えて実行してみてください。\n異なる値を与えればどうなるでしょうか？\n引数の順番を入れ替えたらどうなるでしょうか？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "tests3"
 dir = "17_tests"
-hint = """???"""
+hint = """関連関数Rectangle::newが負の値に対してパニックを起こすことをテストでは期待しています。\nそのためにはテスト関数に特別な属性を追加する必要があります。\nRust本の以下を参照してみてください。\nhttps://doc.rust-jp.rs/book-ja/ch11-01-writing-tests.html#should_panic%E3%81%A7%E3%83%91%E3%83%8B%E3%83%83%E3%82%AF%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%99%E3%82%8B"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators1"
 dir = "18_iterators"
-hint = """???"""
+hint = """イテレータはコレクション内の全ての要素に一連の処理を行うが、要素がなくなったらどうすればいいだろうか？\n以下のドキュメントを確認してみてください。\nhttps://doc.rust-lang.org/std/iter/trait.Iterator.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators2"
 dir = "18_iterators"
-hint = """???"""
+hint = """capitalize_first：変数firstはcharです。\n正しいStringを返すには、この文字を大文字にしてcharsの残りの文字に追加する必要があります。\ncharsの残りの文字はas_strメソッドを利用して文字列のスライスとして表示することができます。\ncharsのドキュメントには便利なメソッドがたくさんあります。\nhttps://doc.rust-lang.org/std/primitive.char.html \nchar::to_uppercaseを使いましょう。\nこれはStringに変換できるイテレータを返します。\ncapitalize_words_vector：\nスライスからイテレータを作成します。\ncapitalize_first関数を適用してイテレータの値を変換します。\nイテレータをcollectすることを忘れないようにしましょう。\ncapitalize_words_string：\n以前と同じ方法で解決できます。\ncollectは非常に強力で汎用的です。\nRustは目的の方を示すだけで、適切に対応してくれます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators3"
 dir = "18_iterators"
-hint = """???"""
+hint = """divide関数は除数が0の場合や偶数で除算ができないときに正しいエラーを返す必要があります。\ndivision_results変数はコレクション型として計算結果を収集する必要があります。\nresult_with_list関数は単一のResultを返す必要があり、成功した場合には整数のベクトル、失敗した場合にはDivisionErrorを返します。\nlist_of_results関数は結果のベクトルを返す必要があります。\nFromIteratorがcollectの中でどのように使われているかについては以下のURLを参考にしてください。\nこのトレイトは非常に強力で、このエクササイズをより簡単に解くことができます。\nhttps://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect """
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators4"
 dir = "18_iterators"
-hint = """???"""
+hint = """命令型プログラミング言語では、変数を更新するforループを書くかもしれない。\nもしくは、再帰とmatchを使ったコードを書くかもしれない。\nRustでは別の関数型アプローチを取ることができ、範囲とイテレータを用いることで階乗をスタイリッシュに解くことができる。\nfoldメソッドとrfoldをチェックしてみよう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators5"
 dir = "18_iterators"
-hint = """???"""
+hint = """std::iter::Iteratorトレイトのドキュメントにはここで役立つメソッドが多数抱えれている。count_collection_iteratorのcollection変数はHashMapのスライスで、イテレータのメソッドを使うためにはイテレータに変換する必要があります。foldメソッドはcount_collection_iterator関数で有用です。さらに挑戦したい場合にはIteratorのドキュメントを参照して、foldを使うよりもコードをコンパクトにできる別のメソッドを探してみましょう！"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "box1"
 dir = "19_smart_pointers"
-hint = """???"""
+hint = """コンパイラーのメッセージが参考になるかもしれません。\n再帰型を扱う場合、実際の型の値を格納することができないため、その値への参照(ポインタ)を格納する必要があります。\n従ってListをBoxに置く必要があります。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch15-01-box.html#%E3%83%9C%E3%83%83%E3%82%AF%E3%82%B9%E3%81%A7%E5%86%8D%E5%B8%B0%E7%9A%84%E3%81%AA%E5%9E%8B%E3%82%92%E5%8F%AF%E8%83%BD%E3%81%AB%E3%81%99%E3%82%8B \n空のリストを作るのはとても簡単です。\nテストの記述部分を参考にしてみてください。\n空でないリストを作成する場合にはConsリストビルダーを使用することに注意してください。\n現在のリストはi32ですが、定義を変更して他の型も試してみてください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "rc1"
 dir = "19_smart_pointers"
-hint = """???"""
+hint = """このエクササイズはRC<T>型を使う簡単な練習です。\n各PlanetはSunの所有権を持ちRe::cloneを使ってSunの参照カウントを増やします。\ndropを使ってPlanetを個別にスコープから外すと参照カウントが減ります。\n最終的にSunは自分自身への参照を一つだけ持つことになります。詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch15-04-rc.html \n※冥王星はもはや惑星ではありません:("""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "arc1"
 dir = "19_smart_pointers"
 test = false
-hint = """???"""
+hint = """shared_numbersをnumbersベクトルのArcとする。\nそれからnumbersのコピーを作らないようにするためにchild_numbersをループの外側でメインスレッドで作る必要がある。\nchild_numbersはスレッドローカルな数字のコピーではなく、数字のArcのクローンでなければならない。\n基本的な概念を理解していればこれは簡単な練習問題だが、難しいようであればRust本の以下を全て読んでみてください。\nhttps://doc.rust-jp.rs/book-ja/ch16-00-concurrency.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "cow1"
 dir = "19_smart_pointers"
-hint = """???"""
+hint = """もしもCowが既にデータを所有していればto_mutが呼ばれたときにその関数をクローンする必要はありません。\nCow型のドキュメントを参照にすること。\nhttps://doc.rust-lang.org/std/borrow/enum.Cow.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "threads1"
 dir = "20_threads"
 test = false
-hint = """???"""
+hint = """JoinHandleはスポーンされたスレッドから返される構造体です。\nhttps://doc.rust-lang.org/std/thread/fn.spawn.html \nマルチスレッドアプリケーションの課題はスポーンされたスレッドが終了する前にメインスレッドが終了する可能性があることです。\nhttps://doc.rust-jp.rs/book-ja/ch16-01-threads.html#join%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AB%E3%81%A7%E5%85%A8%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89%E3%81%AE%E7%B5%82%E4%BA%86%E3%82%92%E5%BE%85%E3%81%A4 \nJoinHandleを使って各スレッドの終了を待ち、結果を収集しましょう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "threads2"
 dir = "20_threads"
 test = false
-hint = """???"""
+hint = """Arc型はアトミックな参照カウントポインターであり、不変なデータへの安全な共有アクセスを可能にします。\nしかし今回のエクササイズではjobs_doneの数を変更したいため、一度に１つのスレッドにしかデータを変更させない別の型を利用する必要があります。\nRust本の以下のセクションを見てみましょう。\nhttps://doc.rust-jp.rs/book-ja/ch16-03-shared-state.html#arct%E3%81%A7%E5%8E%9F%E5%AD%90%E7%9A%84%E3%81%AA%E5%8F%82%E7%85%A7%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88 \nもっとヒントが欲しければ以下も読んでください。\nmain関数の最初に以下のようなコードがありますか？\n```let status = Arc::new(Mutex::new(JobStatus { jobs_done: 0 }));\n```\nこれはRust本のコード例に似ています。\nhttps://doc.rust-jp.rs/book-ja/ch16-03-shared-state.html#%E8%A4%87%E6%95%B0%E3%81%AE%E3%82%B9%E3%83%AC%E3%83%83%E3%83%89%E9%96%93%E3%81%A7mutext%E3%82%92%E5%85%B1%E6%9C%89%E3%81%99%E3%82%8B"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "threads3"
 dir = "20_threads"
-hint = """???"""
+hint = """スレッド間の同時実行を処理する別の方法としてmpc(multiple producer, single consumer)チャンネルを使って通信する方法があります。\n送信側と受信側の両方があれば、あるスレッドで値を送信し、別のスレッドで受信することができます。\ncloneを使って元の受信側の複製を作成することで複数のプロデューサを作成することができます。\nRust本の関連セクション\nhttps://doc.rust-jp.rs/book-ja/ch16-02-message-passing.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "macros1"
 dir = "21_macros"
 test = false
-hint = """???"""
+hint = """Rustでマクロを呼び出す場合は通常の関数呼び出しに比べて特別な文字を追加する必要があります。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "macros2"
 dir = "21_macros"
 test = false
-hint = """???"""
+hint = """Rustのマクロは、普段のコードを書く場所と同じルールではありません。\n「マクロを定義する場所」と「マクロを使用する場所の順序」は重要です。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "macros3"
 dir = "21_macros"
 test = false
-hint = """???"""
+hint = """マクロのモジュールを外で使うには、モジュールに特別な処理を施して、マクロを親ディレクトリに持ち出す必要があります。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "macros4"
 dir = "21_macros"
 test = false
-hint = """???"""
+hint = """たった1文字追加するだけでコンパイルできるようになります。マクロの書き方はそれぞれのマクロアームに何かを挟むことで、それらを分離することが可能になります。これでマクロの練習は終わりになりますが、ほんの一部しか紹介していません。より詳細な入門書として「The Little Book of Rust Macros」をお読みください。\nhttps://veykril.github.io/tlborm/"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "clippy1"
 dir = "22_clippy"
 test = false
-hint = """???"""
+hint = """Rustの標準ライブラリには長精度や無限精度の数学定数を格納しています。\nhttps://doc.rust-lang.org/stable/std/f32/consts/index.html \nあるしゅの数学的定数として独自の近似値を使いたい場面があるかもしれませんが、clippyは不正確な数学定数を潜在的なエラーの原因として認識します。\nコンパイル出力のClippyの警告を参照して、std::f32::constsから適切な置換定数を使用してください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "clippy2"
 dir = "22_clippy"
 test = false
-hint = """???"""
+hint = """オプション型に対するforループはif-letのステートメントとして表現されます。\nこの練習問題を解く必要はありませんが、もしもオプション型を繰り返し解く必要があれば、ドキュメントの次のセクションを読んでください。\nhttps://doc.rust-lang.org/std/option/#iterating-over-option"""
 skip_check_unsolved = true
 
 [[exercises]]
@@ -589,34 +589,34 @@ skip_check_unsolved = true
 name = "clippy3"
 dir = "22_clippy"
 test = false
-hint = """???"""
+hint = """ヒントはないです！"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "using_as"
 dir = "23_conversions"
-hint = """???"""
+hint = """as演算子を利用してaverage関数の最終行のオペランドの一つを期待される返り値の方に変更してください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "from_into"
 dir = "23_conversions"
-hint = """???"""
+hint = """Fromの直前に実装されている手順に従ってください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "from_str"
 dir = "23_conversions"
-hint = """???"""
+hint = """FromStrの実装ではPersonオブジェクトを指定して、Okを返し、文字列が向こうの場合にはエラーを指定してErrを返す必要があります。\nこれはfrom_intoの練習とほぼ同じだがデフォルト値を返す代わりにエラーを返しています。\nもう１つのヒント：\nResultのmap_errメソッドやクロージャーで使用すると、parse::<u8>からのエラーをラップすることができます。\nさらにもう１つヒント：\n?演算子を利用してエラーを伝播させたい場合は、以下を参照してください。\nhttps://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "try_from_into"
 dir = "23_conversions"
-hint = """???"""
+hint = """標準ライブラリのTryFromの実装で必要な整数変換と入力範囲のチェックの両方ができるものはありますか？チャレンジ：\nTryFromの実装を多くの整数型に対して汎用的に実装できますか？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "as_ref_mut"
 dir = "23_conversions"
-hint = """???"""
+hint = """AsRef<str>またはAsMut<u32>を関数にバインドされたトレイトとして追加しましょう。"""
