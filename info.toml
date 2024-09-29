@@ -33,7 +33,7 @@ hint = """コンパイラーは、printマクロの名前が間違っている�
 name = "variables1"
 dir = "01_variables"
 test = false
-hint = """Rustで`main`関数内での宣言において、新しい変数に値を紐付けするために必要なキーワードが欠けていいます。"""
+hint = """Rustの`main`関数内での宣言において、新しい変数に値を紐付けするために必要なキーワードが欠けていいます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -103,13 +103,13 @@ hint = """エラーメッセージはsale_price関数の「->」以降に返り�
 name = "functions5"
 dir = "02_functions"
 test = false
-hint = """これはRustでよくあるエラーで1文字削除するだけで直ります。\nこれはRustが式と文を区別しているために起こります。\n式はオペラントに応じた値を返し、文は単に「()」を返します。square関数はi32を返すはずだが、()を返してしまっています。\n解決方法は２つあります。\n1. returnキーワードを追加する\n2. セミコロンを削除する"""
+hint = """これはRustでよくあるエラーで1文字削除するだけで直ります。\nこれはRustが式と文を区別しているために起こります。\n式はオペラントに応じた値を返し、文は単に「()」を返します。square関数はi32を返すはずですが、()を返してしまっています。\n解決方法は２つあります。\n1. returnキーワードを追加する\n2. セミコロンを削除する"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "if1"
 dir = "03_if"
-hint = """一行で行いたい処理を実装することも可能です。\n\n他の言語で言うと\n・C++ならa > b ? a : b\nPythonならa if a > b else b\nRustにおいて覚えておくべきことは、\n・if文の条件は丸括弧などで囲む必要はないこと\n・if/elseは式であること\n・条件式の後には{}ブロックが続くこと"""
+hint = """一行で行いたい処理を実装することも可能です。\n\n他の言語で言うと\n・C++ならa > b ? a : b\n・Pythonならa if a > b else b\nRustにおいて覚えておくべきことは、\n・if文の条件は丸括弧などで囲む必要はないこと\n・if/elseは式であること\n・条件式の後には{}ブロックが続くこと"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -134,7 +134,7 @@ hint = """今回はヒントなしです ;)"""
 name = "primitive_types1"
 dir = "04_primitive_types"
 test = false
-hint = """Rustでは演算子「!」をブール値の前に置くことでブール値を否定することができます。\n例: `!true == false`これはブーリアン型の変数でも使えます。"""
+hint = """Rustでは演算子「!」をブール値の前に置くことでブール値を否定することができます。\n例: `!true == false`\nこれはブーリアン型の変数でも使えます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -154,7 +154,7 @@ hint = """Rustでは配列型一定のサイズで初期化する省略記法が
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types4"
 dir = "04_primitive_types"
-hint = """スライスについてはRust本の以下のページに詳しく書かれています。\nhttps://doc.rust-jp.rs/book-ja/ch04-03-slices.html \nスライスではスライスに入れたい配列の要素の開始・終了(+1)のインデックスを使います。\n「assert_eq!」の第一引数に「&」がないのはなぜでしょうか？それは第二引数が参照型だからです。\nhttps://doc.rust-lang.org/nomicon/coercions.html"""
+hint = """スライスについてはRust本の以下のページに詳しく書かれています。\nhttps://doc.rust-jp.rs/book-ja/ch04-03-slices.html \nスライスではスライスに入れたい配列の要素の開始・終了(+1)のインデックスを使います。\n「assert_eq!」の第一引数に「&」がないのはなぜでしょうか？\nそれは第二引数が参照型だからです。\nhttps://doc.rust-lang.org/nomicon/coercions.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -167,19 +167,19 @@ hint = """タプルについてはRust本の以下のページに詳しく書か
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "primitive_types6"
 dir = "04_primitive_types"
-hint = """このエクササイズではタプルの要素を分解することもできるが、Rust本の例で説明があるようにタプルのインデックスを使ってみよう。\nこれでコードの表現の幅が広がるはずだ。"""
+hint = """このエクササイズではタプルの要素を分解することもできるが、Rust本の例で説明があるようにタプルのインデックスを使ってみよう。\nこれでコードの表現の幅が広がるはずです。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "vecs1"
 dir = "05_vecs"
-hint = """Rustではベクター型を定義する方法が２つある。\n1. 「Vec::new()」関数を使って新しいベクトルを作り、「push」メソッドでベクトルに追加する\n2. 「vec![]」マクロを使い要素を最初に定義し、初期化する(初期値を知っている場合はこっちを使った方が簡単)\n詳しくはRustの以下のページを参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-01-vectors.html"""
+hint = """Rustではベクター型を定義する方法が２つあります。\n1. 「Vec::new()」関数を使って新しいベクトルを作り、「push」メソッドでベクトルに追加する\n2. 「vec![]」マクロを使い要素を最初に定義し、初期化する(初期値を知っている場合はこっちを使った方が簡単)\n詳しくはRustの以下のページを参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-01-vectors.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "vecs2"
 dir = "05_vecs"
-hint = """最初の関数では空のベクトルを作成し、新しい要素をプッシュしています。\n二つ目の関数では入力の値をmapして、ベクトルに集約しています。\n両方の関数を書いてみて、どちらのアプローチが好みか確かめてみてください。\nちなみにRust開発者で一般的に使われているパターンはどちらでしょうか？"""
+hint = """最初の関数では空のベクトルを作成し、新しい要素をプッシュしています。\n2つ目の関数では入力の値をmapして、ベクトルに集約しています。\n両方の関数を書いてみて、どちらのアプローチが好みか確かめてみてください。\nちなみにRust開発者で一般的に使われているパターンはどちらだと思いますか？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -191,26 +191,26 @@ hint = """このエクササイズではベクターに要素をプッシュし�
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics2"
 dir = "06_move_semantics"
-hint = """このエクササイズを最初に実行するとき「移動した値の借用」と言うエラーがあることに気がつきましたか？\nRustでは引数が関数に渡され、その値が明示的に返却されない場合に元の変数は利用できなくなります。\nつまりfill_vecにvec0を渡すとvec1に所有権が移動するため、vec0にはアクセスできなくなります。\nもしもこの問題を解決したい場合には、vec0のクローンを作成して、fill_vecに渡す必要がある。"""
+hint = """このエクササイズを最初に実行するとき「移動した値の借用」と言うエラーがあることに気がつきましたか？\nRustでは引数が関数に渡され、その値が明示的に返却されない場合に元の変数は利用できなくなります。\nつまりfill_vecにvec0を渡すとvec1に所有権が移動するため、vec0にはアクセスできなくなります。\nもしもこの問題を解決したい場合には、vec0のクローンを作成して、fill_vecに渡す必要があります。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics3"
 dir = "06_move_semantics"
-hint = """今までのエクササイズとの差分はfill_vecの関数の最初にあった「let mut vec = vec」がなくなったことだ。\nその代わりに既存の配列の初期定義時にmutを追加しましょう。"""
+hint = """今までのエクササイズとの差分はfill_vecの関数の最初にあった「let mut vec = vec」がなくなったことです。\nその代わりに既存の配列の初期定義時にmutを追加しましょう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics4"
 dir = "06_move_semantics"
-hint = """可変な参照のスコープの範囲を慎重に考えましょう。\n可変参照を取得したとにxの値を更新することは何かの役に立つでしょうか？\n可変変数の参照についてはRust本の以下のページを参考にしてください。\nhttps://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"""
+hint = """可変な参照のスコープの範囲を慎重に考えましょう。\n可変参照を取得したときにxの値を更新することは何かの役に立つでしょうか？\n可変変数の参照についてはRust本の以下のページを参考にしてください。\nhttps://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "move_semantics5"
 dir = "06_move_semantics"
 test = false
-hint = """このエクササイズの解答を見つけるにはRust本の以下を読んでください。\nhttps://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html \nこのコードの最初の問題点は、get_charが文字列の所有権をとっていることです。\nそのためdataの所有権が移動してしまい、string_uppercaseを実行することができない。\nこのエラーを修正した後はstring_uppercaseの関数のシグネチャも修正する必要があります。"""
+hint = """このエクササイズの解答を見つけるにはRust本の以下を読んでください。\nhttps://doc.rust-jp.rs/book-ja/ch04-02-references-and-borrowing.html \nこのコードの最初の問題点は、get_charが文字列の所有権をとっていることです。\nそのためdataの所有権が移動してしまい、string_uppercaseを実行することができません。\nこのエラーを修正した後はstring_uppercaseの関数のシグネチャも修正する必要があります。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -222,7 +222,7 @@ hint = """Rustには3種類の構造体があり、どの構造体も関連す�
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "structs2"
 dir = "07_structs"
-hint = """構造体のインスタンスを作成するのは簡単で、各フィールドに値を代入するだけで良い。またインスタンス化を行う際に使えるいくつかのショートカットもあるので、Rust本をご確認ください。\nhttps://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html#%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E3%81%A8%E5%A4%89%E6%95%B0%E3%81%8C%E5%90%8C%E5%90%8D%E3%81%AE%E6%99%82%E3%81%AB%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E5%88%9D%E6%9C%9F%E5%8C%96%E7%9C%81%E7%95%A5%E8%A8%98%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%86"""
+hint = """構造体のインスタンスを作成するのは簡単で、各フィールドに値を代入するだけで大丈夫です。\nまたインスタンス化を行う際に使えるいくつかのショートカットもあるため、Rust本をご確認ください。\nhttps://doc.rust-jp.rs/book-ja/ch05-01-defining-structs.html#%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E3%81%A8%E5%A4%89%E6%95%B0%E3%81%8C%E5%90%8C%E5%90%8D%E3%81%AE%E6%99%82%E3%81%AB%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB%E3%83%89%E5%88%9D%E6%9C%9F%E5%8C%96%E7%9C%81%E7%95%A5%E8%A8%98%E6%B3%95%E3%82%92%E4%BD%BF%E3%81%86"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -255,7 +255,7 @@ hint = """最初のステップとして、エラーが出ないように列挙�
 name = "strings1"
 dir = "09_strings"
 test = false
-hint = """current_favorite_color関数はstaticライフタイムのスライスを返している。\n文字列のデータはコードに埋め込まれているため、コードが実行されている限りは保持されます。\nただし文字列のスライスはString型とは異なるため、Rust本やFromの特性を用いることで型の変換を行うことができます。"""
+hint = """current_favorite_color関数はstaticライフタイムのスライスを返しています。\n文字列のデータはコードに埋め込まれているため、コードが実行されている限りは保持されます。\nただし文字列のスライスはString型とは異なるため、Rust本やFromの特性を用いることで型の変換を行うことができます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -268,7 +268,7 @@ hint = """word変数に紐付けされている値を文字列のスライス型
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "strings3"
 dir = "09_strings"
-hint = """文字列の標準ライブラリには便利なものがいくつかあるので使ってみよう。\nhttps://doc.rust-lang.org/std/string/struct.String.html#method.trim \ncompose_me：format!マクロを使ったり、文字列のスライスを所有権のある文字列に変換したり、自由に拡張することができる\n replace_meについてはreplaceメソッドを参照してください\nhttps://doc.rust-lang.org/std/string/struct.String.html#method.replace"""
+hint = """文字列の標準ライブラリには便利なものがいくつかあるので使ってみよう。\nhttps://doc.rust-lang.org/std/string/struct.String.html#method.trim \ncompose_me：format!マクロを使ったり、文字列のスライスを所有権のある文字列に変換したり、自由に拡張することができるreplace_meについてはreplaceメソッドを参照してください。\nhttps://doc.rust-lang.org/std/string/struct.String.html#method.replace"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -314,13 +314,13 @@ hint = """ハッシュマップのentryメソッドやor_insertメソッドを�
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "hashmaps3"
 dir = "11_hashmaps"
-hint = """ヒント１：ハッシュマップのentryとor_insert(もしくはor_insert_with)メソッドを使用して、テーブルにチームが存在しない場合にTeamScoresのデフォルト値を挿入してください。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html#%E3%82%AD%E3%83%BC%E3%81%AB%E5%80%A4%E3%81%8C%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E6%99%82%E3%81%AE%E3%81%BF%E5%80%A4%E3%82%92%E6%8C%BF%E5%85%A5%E3%81%99%E3%82%8B \nヒント２：与えられたキーのエントリが既に存在する場合に既存で設定される値に基づいて更新することができるようにしましょう。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html#%E5%8F%A4%E3%81%84%E5%80%A4%E3%81%AB%E5%9F%BA%E3%81%A5%E3%81%84%E3%81%A6%E5%80%A4%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B"""
+hint = """ヒント１：ハッシュマップのentryとor_insert(もしくはor_insert_with)メソッドを使用して、テーブルにチームが存在しない場合にTeamScoresのデフォルト値を挿入してください。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html#%E3%82%AD%E3%83%BC%E3%81%AB%E5%80%A4%E3%81%8C%E3%81%AA%E3%81%8B%E3%81%A3%E3%81%9F%E6%99%82%E3%81%AE%E3%81%BF%E5%80%A4%E3%82%92%E6%8C%BF%E5%85%A5%E3%81%99%E3%82%8B \n\nヒント２：与えられたキーのエントリが既に存在する場合に既存で設定される値に基づいて更新することができるようにしましょう。\n詳しくはRust本を参照してください。\nhttps://doc.rust-jp.rs/book-ja/ch08-03-hash-maps.html#%E5%8F%A4%E3%81%84%E5%80%A4%E3%81%AB%E5%9F%BA%E3%81%A5%E3%81%84%E3%81%A6%E5%80%A4%E3%82%92%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "quiz2"
 dir = "quizzes"
-hint = """演算子+はStringと&strを連結することができる。"""
+hint = """演算子+はStringと&strを連結することができます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -351,7 +351,7 @@ hint = """generate_nametag_textはオプション型ではなく、OkやErr型�
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors2"
 dir = "13_error_handling"
-hint = """これを処理する方法には、item_quantityでmatch文を使う方法があります。またその他の方法として、?演算子を使っても同じようなことができます。詳しくはRust本の以下を確認してください。\nhttps://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html#%E3%82%A8%E3%83%A9%E3%83%BC%E5%A7%94%E8%AD%B2%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-%E6%BC%94%E7%AE%97%E5%AD%90"""
+hint = """これを処理する方法には、item_quantityでmatch文を使う方法があります。\nまたその他の方法として、?演算子を使っても同じようなことができます。\n詳しくはRust本の以下を確認してください。\nhttps://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html#%E3%82%A8%E3%83%A9%E3%83%BC%E5%A7%94%E8%AD%B2%E3%81%AE%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-%E6%BC%94%E7%AE%97%E5%AD%90"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -364,14 +364,14 @@ hint = """他の関数がResult型を返すことができるのであれば、�
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors4"
 dir = "13_error_handling"
-hint = """PositiveNonzeroInteger::newは常に新しいインスタンスを生成して値を返します。\nただしインスタンス作成時にチェックに失敗した倍にはErrを返します(問題がない場合はOkを返す)。"""
+hint = """PositiveNonzeroInteger::newは常に新しいインスタンスを生成して値を返します。\nただしインスタンス作成時にチェックに失敗した場合にはErrを返します(問題がない場合はOkを返します)。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "errors5"
 dir = "13_error_handling"
 test = false
-hint = """main関数内では2つの異なるResult型が生成され、それらは?を使って情報を伝達する。\nその両方を許容するmain関数の返り値の型はどのように制限すればいいだろうか？\n?演算子の処理の裏側ではエラー値に対してFrom::fromを呼び出して、ボックス化されたトレイトオブジェクトであるBox<dyn Error>に変換しています。\n全てのエラーはErrorトレイトに実装しているので、1つのBoxオブジェクトに様々なエラーを含めることができます。\nRust本のこのセクションを参考にしてください。\nhttps://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html#%E3%82%A8%E3%83%A9%E3%83%BC%E6%99%82%E3%81%AB%E3%83%91%E3%83%8B%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-unwrap%E3%81%A8expect \nエラーのボックス化については以下を参照してください。\nhttps://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html \nボックス化されたエラーで?演算子を使う方法について読む\nhttps://doc.rust-jp.rs/rust-by-example-ja/error/multiple_error_types/boxing_errors.html"""
+hint = """main関数内では2つの異なるResult型が生成され、それらは?を使って情報を伝達します。\nその両方を許容するmain関数の返り値の型はどのように制限すればいいでしょうか？\n?演算子の処理の裏側ではエラー値に対してFrom::fromを呼び出して、ボックス化されたトレイトオブジェクトであるBox<dyn Error>に変換しています。\n全てのエラーはErrorトレイトに実装しているので、1つのBoxオブジェクトに様々なエラーを含めることができます。\nRust本のこのセクションを参考にしてください。\nhttps://doc.rust-jp.rs/book-ja/ch09-02-recoverable-errors-with-result.html#%E3%82%A8%E3%83%A9%E3%83%BC%E6%99%82%E3%81%AB%E3%83%91%E3%83%8B%E3%83%83%E3%82%AF%E3%81%99%E3%82%8B%E3%82%B7%E3%83%A7%E3%83%BC%E3%83%88%E3%82%AB%E3%83%83%E3%83%88-unwrap%E3%81%A8expect \nエラーのボックス化については以下を参照してください。\nhttps://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/boxing_errors.html \nボックス化されたエラーで?演算子を使う方法についても読んでみましょう。\nhttps://doc.rust-jp.rs/rust-by-example-ja/error/multiple_error_types/boxing_errors.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -384,7 +384,7 @@ hint = """このエクササイズでは前のエクササイズで利用したP
 name = "generics1"
 dir = "14_generics"
 test = false
-hint = """Rustのベクトル型ではジェネリティクスを利用して任意の型の動的なサイズの配列を作成することができます。もしもnumbersというベクトルがVec<T>であればTの型でしかプッシュできない。プッシュする前にintoを使うことでコンパイラにn1とn2をTに変換してもらうことができる。しかしコンパイラーはTの型を知らないので型に対してのアノテーションが必要になります。u8やi8型はi16やi32、i64に変換できます。ベクターのジェネリックを選択しましょう。"""
+hint = """Rustのベクトル型ではジェネリティクスを利用して任意の型の動的なサイズの配列を作成することができます。\nもしもnumbersというベクトルがVec<T>であればTの型でしかプッシュできません。\nプッシュする前にintoを使うことでコンパイラにn1とn2をTに変換してもらうことができます。\nしかしコンパイラーはTの型を知らないので型に対してのアノテーションが必要になります。\nu8やi8型はi16やi32、i64に変換できます。\nベクターのジェネリックを選択しましょう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -439,7 +439,7 @@ hint = """コンパイラーの指示に従ってください。もしも必要�
 name = "lifetimes2"
 dir = "16_lifetimes"
 test = false
-hint = """ライフタイム`aはxとyのうち、小さい方のライフタイムに等しい具体的なライフタイムを取得するということを覚えておいてください。\n内部ブロックを保持したまま望ましい結果を得るためには２つの方法があります。\n1. string2の宣言を移動して、string1と同じ長さにする(resultはどのように宣言されているだろうか？)\n2.println!を内部ブロックに移動する"""
+hint = """ライフタイム`aはxとyのうち、小さい方のライフタイムに等しい具体的なライフタイムを取得するということを覚えておいてください。\n内部ブロックを保持したまま望ましい結果を得るためには２つの方法があります。\n1. string2の宣言を移動して、string1と同じ長さにする(resultはどのように宣言されているだろうか？)\n2. println!を内部ブロックに移動する"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -470,31 +470,31 @@ hint = """関連関数Rectangle::newが負の値に対してパニックを起�
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators1"
 dir = "18_iterators"
-hint = """イテレータはコレクション内の全ての要素に一連の処理を行うが、要素がなくなったらどうすればいいだろうか？\n以下のドキュメントを確認してみてください。\nhttps://doc.rust-lang.org/std/iter/trait.Iterator.html"""
+hint = """イテレータはコレクション内の全ての要素に一連の処理を行うが、要素がなくなったらどうすればいいでしょうか？\n以下のドキュメントを確認してみてください。\nhttps://doc.rust-lang.org/std/iter/trait.Iterator.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators2"
 dir = "18_iterators"
-hint = """capitalize_first：変数firstはcharです。\n正しいStringを返すには、この文字を大文字にしてcharsの残りの文字に追加する必要があります。\ncharsの残りの文字はas_strメソッドを利用して文字列のスライスとして表示することができます。\ncharsのドキュメントには便利なメソッドがたくさんあります。\nhttps://doc.rust-lang.org/std/primitive.char.html \nchar::to_uppercaseを使いましょう。\nこれはStringに変換できるイテレータを返します。\ncapitalize_words_vector：\nスライスからイテレータを作成します。\ncapitalize_first関数を適用してイテレータの値を変換します。\nイテレータをcollectすることを忘れないようにしましょう。\ncapitalize_words_string：\n以前と同じ方法で解決できます。\ncollectは非常に強力で汎用的です。\nRustは目的の方を示すだけで、適切に対応してくれます。"""
+hint = """capitalize_first：変数firstはcharです。\n正しいStringを返すには、この文字を大文字にしてcharsの残りの文字に追加する必要があります。\ncharsの残りの文字はas_strメソッドを利用して文字列のスライスとして表示することができます。\ncharsのドキュメントには便利なメソッドがたくさんあります。\nhttps://doc.rust-lang.org/std/primitive.char.html \nchar::to_uppercaseを使いましょう。\nこれはStringに変換できるイテレータを返します。\n\ncapitalize_words_vector：\nスライスからイテレータを作成します。\n\ncapitalize_first関数を適用してイテレータの値を変換します。\nイテレータをcollectすることを忘れないようにしましょう。\ncapitalize_words_string：\n以前と同じ方法で解決できます。\ncollectは非常に強力で汎用的です。\nRustは目的の方を示すだけで、適切に対応してくれます。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators3"
 dir = "18_iterators"
-hint = """divide関数は除数が0の場合や偶数で除算ができないときに正しいエラーを返す必要があります。\ndivision_results変数はコレクション型として計算結果を収集する必要があります。\nresult_with_list関数は単一のResultを返す必要があり、成功した場合には整数のベクトル、失敗した場合にはDivisionErrorを返します。\nlist_of_results関数は結果のベクトルを返す必要があります。\nFromIteratorがcollectの中でどのように使われているかについては以下のURLを参考にしてください。\nこのトレイトは非常に強力で、このエクササイズをより簡単に解くことができます。\nhttps://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect """
+hint = """divide関数は除数が0の場合や、偶数で除算ができないときに正しいエラーを返す必要があります。\ndivision_results変数はコレクション型として計算結果を収集する必要があります。\nresult_with_list関数は単一のResultを返す必要があり、成功した場合には整数のベクトル、失敗した場合にはDivisionErrorを返します。\nlist_of_results関数は結果のベクトルを返す必要があります。\nFromIteratorがcollectの中でどのように使われているかについては以下のURLを参考にしてください。\nこのトレイトは非常に強力で、このエクササイズをより簡単に解くことができます。\nhttps://doc.rust-lang.org/std/iter/trait.Iterator.html#method.collect """
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators4"
 dir = "18_iterators"
-hint = """命令型プログラミング言語では、変数を更新するforループを書くかもしれない。\nもしくは、再帰とmatchを使ったコードを書くかもしれない。\nRustでは別の関数型アプローチを取ることができ、範囲とイテレータを用いることで階乗をスタイリッシュに解くことができる。\nfoldメソッドとrfoldをチェックしてみよう。"""
+hint = """命令型プログラミング言語では、変数を更新するforループを書くかもしれません。\nもしくは、再帰とmatchを使ったコードを書くかもしれない。\nRustでは別の関数型アプローチを取ることができ、範囲とイテレータを用いることで階乗をスタイリッシュに解くことができます。\nfoldメソッドとrfoldをチェックしてみよう。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "iterators5"
 dir = "18_iterators"
-hint = """std::iter::Iteratorトレイトのドキュメントにはここで役立つメソッドが多数抱えれている。count_collection_iteratorのcollection変数はHashMapのスライスで、イテレータのメソッドを使うためにはイテレータに変換する必要があります。foldメソッドはcount_collection_iterator関数で有用です。さらに挑戦したい場合にはIteratorのドキュメントを参照して、foldを使うよりもコードをコンパクトにできる別のメソッドを探してみましょう！"""
+hint = """std::iter::Iteratorトレイトのドキュメントにはここで役立つメソッドが多数記載されています。\ncount_collection_iteratorのcollection変数はHashMapのスライスで、イテレータのメソッドを使うためにはイテレータに変換する必要があります。\nfoldメソッドはcount_collection_iterator関数で有用です。\nさらに挑戦したい場合にはIteratorのドキュメントを参照して、foldを使うよりもコードをコンパクトにできる別のメソッドを探してみましょう！"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -513,7 +513,7 @@ hint = """このエクササイズはRC<T>型を使う簡単な練習です。\n
 name = "arc1"
 dir = "19_smart_pointers"
 test = false
-hint = """shared_numbersをnumbersベクトルのArcとする。\nそれからnumbersのコピーを作らないようにするためにchild_numbersをループの外側でメインスレッドで作る必要がある。\nchild_numbersはスレッドローカルな数字のコピーではなく、数字のArcのクローンでなければならない。\n基本的な概念を理解していればこれは簡単な練習問題だが、難しいようであればRust本の以下を全て読んでみてください。\nhttps://doc.rust-jp.rs/book-ja/ch16-00-concurrency.html"""
+hint = """shared_numbersをnumbersベクトルのArcとします。\nそれからnumbersのコピーを作らないようにするためにchild_numbersをループの外側でメインスレッドで作る必要があります。\nchild_numbersはスレッドローカルな数字のコピーではなく、数字のArcのクローンでなければなりません。\n基本的な概念を理解していればこれは簡単な練習問題ですが、難しいようであればRust本の以下を全て読んでみてください。\nhttps://doc.rust-jp.rs/book-ja/ch16-00-concurrency.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -567,14 +567,14 @@ hint = """マクロのモジュールを外で使うには、モジュールに�
 name = "macros4"
 dir = "21_macros"
 test = false
-hint = """たった1文字追加するだけでコンパイルできるようになります。マクロの書き方はそれぞれのマクロアームに何かを挟むことで、それらを分離することが可能になります。これでマクロの練習は終わりになりますが、ほんの一部しか紹介していません。より詳細な入門書として「The Little Book of Rust Macros」をお読みください。\nhttps://veykril.github.io/tlborm/"""
+hint = """たった1文字追加するだけでコンパイルできるようになります。\nマクロの書き方はそれぞれのマクロアームに何かを挟むことで、それらを分離することが可能になります。\nこれでマクロの練習は終わりになりますが、ほんの一部しか紹介していません。\nより詳細な入門書として「The Little Book of Rust Macros」をお読みください。\nhttps://veykril.github.io/tlborm/"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "clippy1"
 dir = "22_clippy"
 test = false
-hint = """Rustの標準ライブラリには長精度や無限精度の数学定数を格納しています。\nhttps://doc.rust-lang.org/stable/std/f32/consts/index.html \nあるしゅの数学的定数として独自の近似値を使いたい場面があるかもしれませんが、clippyは不正確な数学定数を潜在的なエラーの原因として認識します。\nコンパイル出力のClippyの警告を参照して、std::f32::constsから適切な置換定数を使用してください。"""
+hint = """Rustの標準ライブラリには長精度や無限精度の数学定数を格納しています。\nhttps://doc.rust-lang.org/stable/std/f32/consts/index.html \nある種の数学的定数として独自の近似値を使いたい場面があるかもしれませんが、clippyは不正確な数学定数を潜在的なエラーの原因として認識します。\nコンパイル出力のClippyの警告を参照して、std::f32::constsから適切な置換定数を使用してください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -595,7 +595,7 @@ hint = """ヒントはないです！"""
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "using_as"
 dir = "23_conversions"
-hint = """as演算子を利用してaverage関数の最終行のオペランドの一つを期待される返り値の方に変更してください。"""
+hint = """as演算子を利用してaverage関数の最終行のオペランドの一つを期待される返り値の型に変更してください。"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
@@ -607,13 +607,13 @@ hint = """Fromの直前に実装されている手順に従ってください。
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "from_str"
 dir = "23_conversions"
-hint = """FromStrの実装ではPersonオブジェクトを指定して、Okを返し、文字列が向こうの場合にはエラーを指定してErrを返す必要があります。\nこれはfrom_intoの練習とほぼ同じだがデフォルト値を返す代わりにエラーを返しています。\nもう１つのヒント：\nResultのmap_errメソッドやクロージャーで使用すると、parse::<u8>からのエラーをラップすることができます。\nさらにもう１つヒント：\n?演算子を利用してエラーを伝播させたい場合は、以下を参照してください。\nhttps://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html"""
+hint = """FromStrの実装ではPersonオブジェクトを指定して、Okを返し、文字列が向こうの場合にはエラーを指定してErrを返す必要があります。\nこれはfrom_intoの練習とほぼ同じですが、デフォルト値を返す代わりにエラーを返しています。\nもう１つのヒント：\nResultのmap_errメソッドやクロージャーで使用すると、parse::<u8>からのエラーをラップすることができます。\nさらにもう１つヒント：\n?演算子を利用してエラーを伝播させたい場合は、以下を参照してください。\nhttps://doc.rust-lang.org/stable/rust-by-example/error/multiple_error_types/reenter_question_mark.html"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
 name = "try_from_into"
 dir = "23_conversions"
-hint = """標準ライブラリのTryFromの実装で必要な整数変換と入力範囲のチェックの両方ができるものはありますか？チャレンジ：\nTryFromの実装を多くの整数型に対して汎用的に実装できますか？"""
+hint = """標準ライブラリのTryFromの実装で必要な整数変換と入力範囲のチェックの両方ができるものはありますか？\nチャレンジ：\nTryFromの実装を多くの整数型に対して汎用的に実装できますか？"""
 
 [[exercises]]
 # Exercise name which is the exercise file name without the `.rs` extension.
