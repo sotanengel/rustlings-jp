@@ -1,6 +1,6 @@
 // メアリーはりんごを買っています。りんごの価格は以下のように計算されます：
 // - りんご1個は2 rustbucksかかります
-// - 40個より多くリンゴを買ったら、りんご1個の値段は2 rustbucksになります。
+// - 40個より多くリンゴを買ったら、りんご1個の値段は1 rustbucksになります。
 
 fn calculate_price_of_apples(n_apples: u64) -> u64 {
     if n_apples > 40 {
