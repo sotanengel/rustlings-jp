@@ -10,7 +10,7 @@ enum CreationError {
     Zero,
 }
 
-// カウタムエラーとして`PositiveNonzeroInteger::parse`を使います。
+// カスタムエラーとして`PositiveNonzeroInteger::parse`を使います。
 #[derive(PartialEq, Debug)]
 enum ParsePosNonzeroError {
     Creation(CreationError),
