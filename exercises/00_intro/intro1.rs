@@ -20,7 +20,7 @@ fn main() {
     println!("このファイルは`exercises/00_intro/intro1.rs`にあります。確認してみてください。");
     println!("現在のエクササイズの進捗はターミナル上のプロセスバーで確認できます。");
     println!("ターミナル上のパスをクリックすればエクササイズのファイルを確認できます。");
-    println!("");
+    println!();
     println!("どうしても分からない場合には`solutions`に解答例のファイルがあるので確認してみてください。");
     println!("その他、修正点などあれば「https://github.com/sotanengel/rustlings-jp/issues」にて連絡いただければと思います。");
 }
