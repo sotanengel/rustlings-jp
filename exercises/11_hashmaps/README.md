@@ -4,7 +4,7 @@
 これはC++で言うところの[*unordered map*](https://en.cppreference.com/w/cpp/container/unordered_map)やPythonで言うところの[*dictionary*](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)、
 他言語で言うところの*連想配列*と言えます。
 
-ハッシュマップは配列とは違うデータ構造を持ちます。
+これは以前にベクターのところで述べた、その他のデータ構造になります。
 
 # 補足情報
 
