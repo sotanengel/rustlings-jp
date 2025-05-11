@@ -5,4 +5,4 @@ Rustにはスライスの文字列(`&str`)と所有権のある文字列(`String
 
 # 補足情報
 
-- [Strings](hhttps://doc.rust-jp.rs/book-ja/ch08-02-strings.html)
+- [Strings](https://doc.rust-jp.rs/book-ja/ch08-02-strings.html)
